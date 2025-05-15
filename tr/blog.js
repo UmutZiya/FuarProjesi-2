@@ -117,18 +117,36 @@ function filterCards(category) {
       button.classList.remove("active-blogs")
     }
   })
+  
+  // Mevcut scroll pozisyonunu kaydet
+  const scrollPosition = window.scrollY;
 
-  // Filter and render cards
-  if (category === "all") {
-    renderCards(initialCards)
-  } else {
-    const filteredCards = initialCards.filter((card) => card.category === category)
-    renderCards(filteredCards)
-  }
+  // Kartları animasyonla soluklaştır
+  const existingCards = document.querySelectorAll('.card-blogs');
+  existingCards.forEach(card => {
+    card.style.opacity = '0';
+  });
+
+  // Kısa bir gecikme ile filtreleme işlemini gerçekleştir
+  setTimeout(() => {
+    // Filter and render cards
+    if (category === "all") {
+      renderCards(initialCards)
+    } else {
+      const filteredCards = initialCards.filter((card) => card.category === category)
+      renderCards(filteredCards)
+    }
+    
+    // Scroll pozisyonunu koru
+    window.scrollTo(0, scrollPosition);
+  }, 300); // 300ms gecikme ile filtreleme yapılacak (animasyonun tamamlanması için)
 }
 
 // Function to render all cards
 function renderCards(cards) {
+  // Mevcut scroll pozisyonunu kaydet
+  const scrollPosition = window.scrollY;
+  
   const cardGrid = document.getElementById("cardGrid-blogs")
   cardGrid.innerHTML = "" // Clear existing cards
 
@@ -138,13 +156,26 @@ function renderCards(cards) {
     noResults.className = "no-results-blogs"
     noResults.textContent = "Bu kategoride henüz içerik bulunmamaktadır."
     cardGrid.appendChild(noResults)
+    
+    // Scroll pozisyonunu koru
+    window.scrollTo(0, scrollPosition);
     return
   }
 
   cards.forEach((cardData) => {
     const card = createCard(cardData)
+    // Başlangıçta kartlar şeffaf olacak
+    card.style.opacity = "0"
     cardGrid.appendChild(card)
+    
+    // Kısa bir gecikme ile kartları görünür yap (animasyon için)
+    setTimeout(() => {
+      card.style.opacity = "1"
+    }, 50)
   })
+  
+  // Scroll pozisyonunu koru
+  window.scrollTo(0, scrollPosition);
 }
 
 // Function to add a new card
