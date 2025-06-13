@@ -771,19 +771,6 @@ h1 {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Card Slider-1 Css */
 
 .slider-container {
@@ -2406,10 +2393,6 @@ body {
 .close-lightbox-bspg:focus {
   outline: none;
 }
-
-
-
-
 .card-footer {
   max-width: fit-content;
   border-radius: 15px;
@@ -2434,7 +2417,7 @@ body {
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .card-footer ul li {
