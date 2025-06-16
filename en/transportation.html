@@ -9,6 +9,7 @@
     integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
   <!-- Css -->
   <link rel="stylesheet" href="../tr/assets/style.css">
+  <link rel="stylesheet" href="../tr/assets/hakkimizda.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -20,41 +21,42 @@
 
 <body>
   <!-- Header Start -->
-  <div class="container-navbar">
-    <a href="home.html" class="logo mt-5">
-      <!-- Gerçek logo dosyanızın yolunu buraya ekleyin -->
-      <img src="./images/logo-turkuaz.png" class="" alt="">
-    </a>
+  <header class="main-header">
+    <div class="container-navbar">
+      <a href="home.html" class="logo mt-5">
+        <!-- Gerçek logo dosyanızın yolunu buraya ekleyin -->
+        <img src="./images/logo-turkuaz.png" class="" alt="">
+      </a>
 
-    <nav class="main-nav mt-5">
-      <ul class="">
+      <nav class="main-nav mt-5">
+        <ul class="">
+          <!-- nav-toggle-button class'ı menüyü açar -->
+          <li><a href="#" class="nav-toggle-button" data-translate="nav.discoverBFM">Discover BFM<i
+                class="fas fa-chevron-down"></i></a></li>
+          <li><a href="#" class="nav-toggle-button" data-translate="nav.organizeFair">Organize a Fair at BFM<i
+                class="fas fa-chevron-down"></i></a></li>
+          <li><a href="#" class="nav-toggle-button" data-translate="nav.visitBFM">Visit BFM <i
+                class="fas fa-chevron-down"></i></a></li>
+          <li><a href="#" class="nav-toggle-button" data-translate="nav.events">Events <i
+                class="fas fa-chevron-down"></i></a></li>
+          <li><a href="#" class="nav-toggle-button" data-translate="nav.contactUs">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switch mt-4 ms-4">
+          <a href="../tr/ulasim.html" class="">TR</a> | <a href="#" class="active" data-translate="lang.en">EN</a>
+        </div>
         <!-- nav-toggle-button class'ı menüyü açar -->
-        <li><a href="#" class="nav-toggle-button" data-translate="nav.discoverBFM">Discover BFM<i
-              class="fas fa-chevron-down"></i></a></li>
-        <li><a href="#" class="nav-toggle-button" data-translate="nav.organizeFair">Organize a Fair at BFM<i
-              class="fas fa-chevron-down"></i></a></li>
-        <li><a href="#" class="nav-toggle-button" data-translate="nav.visitBFM">Visit BFM <i
-              class="fas fa-chevron-down"></i></a></li>
-        <li><a href="#" class="nav-toggle-button" data-translate="nav.events">Events <i
-              class="fas fa-chevron-down"></i></a></li>
-        <li><a href="#" class="nav-toggle-button" data-translate="nav.contactUs">Contact Us</a></li>
-      </ul>
-    </nav>
 
-    <div class="header-actions">
-      <div class="lang-switch mt-4 ms-4">
-        <a href="../tr/ulasim.html" class="">TR</a> | <a href="#" class="active" data-translate="lang.en">EN</a>
       </div>
-      <!-- nav-toggle-button class'ı menüyü açar -->
 
+      <!-- Mobil için Hamburger İkonu (nav-toggle-button class'ı menüyü açar/kapatır) -->
+      <button class="mobile-menu-toggle nav-toggle-button" data-translate-aria-label="menu.toggleAriaLabel"
+        aria-label="Menüyü Aç/Kapat">
+        <i class="fas fa-bars"></i>
+      </button>
     </div>
-
-    <!-- Mobil için Hamburger İkonu (nav-toggle-button class'ı menüyü açar/kapatır) -->
-    <button class="mobile-menu-toggle nav-toggle-button" data-translate-aria-label="menu.toggleAriaLabel"
-      aria-label="Menüyü Aç/Kapat">
-      <i class="fas fa-bars"></i>
-    </button>
-  </div>
   </header>
   <!-- Header End -->
   <!-- Tam Ekran Overlay Menü -->
@@ -71,8 +73,8 @@
       </div>
       <div class="menu-header-actions">
         <div class="lang-switch">
-          <a href="../tr/ulasim.html" class="active" data-lang="tr" data-translate="lang.tr">TR</a> | <a href="#" data-lang="en"
-            data-translate="lang.en">EN</a>
+          <a href="../tr/ulasim.html" class="active" data-lang="tr" data-translate="lang.tr">TR</a> | <a href="#"
+            data-lang="en" data-translate="lang.en">EN</a>
         </div>
         <button class="close-menu-btn" data-translate-aria-label="menu.closeAriaLabel" aria-label="Menüyü Kapat">
           <i class="fas fa-times"></i>
@@ -139,55 +141,54 @@
   <div class="banner">
     <img src="images/iletisim-banner.png" class="" alt="">
   </div>
-
   <div class="container main-container">
     <div class="row">
-      <!-- Sidebar -->
+     <!-- Sidebar -->
       <div class="col-md-3 sidebar-container">
         <div class="sidebar">
           <div class="sidebar-sticky">
             <div class="sidebar-header p-3 mb-3 text-center">
               <h3 class="" data-translate="hizmetler.sidebar.mainTitle">BFM</h3>
-              <p class="text-muted small mb-0" data-translate="hizmetler.sidebar.subTitle">Bursa Fuar Merkezi</p>
+              <p class="text-muted small mb-0" data-translate="hizmetler.sidebar.subTitle">Bursa Fair Center</p>
             </div>
 
             <ul class="nav flex-column">
               <!-- Hizmetler -->
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse"
-                  data-bs-target="#hizmetlerSubmenu" aria-expanded="false">
-                  <span data-translate="hizmetler.sidebar.servicesTitle">Hizmetler</span>
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#idtmSubmenu"
+                  aria-expanded="true">
+                  <span data-translate="hizmetler.sidebar.servicesTitle">Services</span>
                 </a>
-                <div class="collapse" id="hizmetlerSubmenu">
+                <div class="collapse" id="idtmSubmenu">
                   <ul class="nav flex-column submenu">
                     <li class="nav-item">
-                      <a class="nav-link" href="hizmetler.html">
+                      <a class="nav-link" href="services.html">
                         <i class="fas fa-angle-right me-2"></i>
-                        <span data-translate="hizmetler.sidebar.prayerRoom">Mescit</span>
+                        <span data-translate="hizmetler.sidebar.prayerRoom">Mosque</span>
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="cicekci.html">
+                      <a class="nav-link" href="florist.html">
                         <i class="fas fa-angle-right me-2"></i>
-                        <span data-translate="hizmetler.sidebar.florist">Çiçekçi</span>
+                        <span data-translate="hizmetler.sidebar.florist">Florist</span>
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="atm.html">
+                      <a class="nav-link" href="atms.html">
                         <i class="fas fa-angle-right me-2"></i>
-                        <span data-translate="hizmetler.sidebar.atms">ATM'ler</span>
+                        <span data-translate="hizmetler.sidebar.atms">ATM's</span>
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="revir.html">
+                      <a class="nav-link" href="infirmary.html">
                         <i class="fas fa-angle-right me-2"></i>
-                        <span data-translate="hizmetler.sidebar.infirmary">Revir</span>
+                        <span data-translate="hizmetler.sidebar.infirmary">Infirmary</span>
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="kayip-esya.html">
+                      <a class="nav-link" href="lost-item.html">
                         <i class="fas fa-angle-right me-2"></i>
-                        <span data-translate="hizmetler.sidebar.lostAndFound">Kayıp ve Buluntu Eşyalar</span>
+                        <span data-translate="hizmetler.sidebar.lostAndFound">Lost Item</span>
                       </a>
                     </li>
                   </ul>
@@ -198,14 +199,14 @@
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse"
                   data-bs-target="#hakkimizdaSubmenu" aria-expanded="false">
-                  <span data-translate="hizmetler.sidebar.restaurantsCafesTitle">Restoran ve Kafeler</span>
+                  <span data-translate="hizmetler.sidebar.restaurantsCafesTitle">Restaurants And Cafes</span>
                 </a>
                 <div class="collapse" id="hakkimizdaSubmenu">
                   <ul class="nav flex-column submenu">
                     <li class="nav-item">
-                      <a class="nav-link" href="restoran-ve-kafeler.html">
+                      <a class="nav-link" href="restaurant-and-cafes.html">
                         <i class="fas fa-angle-right me-2"></i>
-                        <span data-translate="hizmetler.sidebar.restaurantsCafesList">Restoran ve Kafeler Listesi</span>
+                        <span data-translate="hizmetler.sidebar.restaurantsCafesList">Restaurants And Cafes List</span>
                       </a>
                     </li>
                   </ul>
@@ -216,20 +217,20 @@
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#usalımSubmenu"
                   aria-expanded="false">
-                  <span data-translate="hizmetler.sidebar.transportTitle">Ulaşım</span>
+                  <span data-translate="hizmetler.sidebar.transportTitle">Transport</span>
                 </a>
                 <div class="collapse" id="usalımSubmenu">
                   <ul class="nav flex-column submenu">
                     <li class="nav-item">
-                      <a class="nav-link " href="ulasim.html">
+                      <a class="nav-link active" href="transportation.html">
                         <i class="fas fa-angle-right me-2"></i>
-                        <span data-translate="hizmetler.sidebar.transportToBFM">BFM'ye Ulaşım</span>
+                        <span data-translate="hizmetler.sidebar.transportToBFM">Reaching BFM</span>
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link " href="otopark.html">
+                      <a class="nav-link" href="parking.html">
                         <i class="fas fa-angle-right me-2"></i>
-                        <span data-translate="hizmetler.sidebar.parking">Otopark</span>
+                        <span data-translate="hizmetler.sidebar.parking">Parking</span>
                       </a>
                     </li>
                   </ul>
@@ -240,14 +241,14 @@
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#ifmSubmenu"
                   aria-expanded="false">
-                  <span data-translate="hizmetler.sidebar.accommodationTitle">Konaklama</span>
+                  <span data-translate="hizmetler.sidebar.accommodationTitle">Accomodation</span>
                 </a>
                 <div class="collapse" id="ifmSubmenu">
                   <ul class="nav flex-column submenu">
                     <li class="nav-item">
-                      <a class="nav-link" href="konaklama.html">
+                      <a class="nav-link" href="accommodation.html">
                         <i class="fas fa-angle-right me-2"></i>
-                        <span data-translate="hizmetler.sidebar.nearbyHotels">Yakın Oteller</span>
+                        <span data-translate="hizmetler.sidebar.nearbyHotels">Nearby Hotels</span>
                       </a>
                     </li>
                   </ul>
@@ -261,41 +262,39 @@
       <main class="col-md-9 content-container">
         <div class="content-header">
           <div class="breadcrumb">
-            <a href="index.html">Ana Sayfa</a> /
-            <a href="ulasim.html">Ulaşım</a> /
-            <a href="ulasim.html">BFM'ye Ulaşım</a>
+            <a href="home.html">Home Page</a> /
+            <a href="transportation.html">Transport</a> /
+            <a href="transportation.html">Reaching BFM</a>
           </div>
         </div>
 
         <div class="content-body">
-          <h1 class="page-title-2">BFM'ye Ulaşım</h1>
+          <h1 class="page-title-2">Reaching BFM</h1>
 
           <div class="content-text">
             <h3 class="fw-light fs-3">Metro</h3>
-            <p class="mb-5 fs-6 fw-normal">Yenikapı-Atatürk Havalimanı Metro hattında ‘Dünya Ticaret
-              Merkezi-İstanbul Fuar
-              Merkezi ’ durağında inerek fuar alanımıza ulaşım sağlayabilirsiniz. Ayrıntılı bilgi için
-              <a class="text-danger" href="https://www.burulas.com.tr/rayli-sistemler/bursaray"
-                target="_blank">tıklayınız</a>
+            <p class="mb-5 fs-6 fw-normal">You can reach our fairground by getting off at the ‘World Trade
+              Center-Istanbul Fair Center’ stop on the Yenikapı-Atatürk Airport Metro line. For detailed information
+              <a class="text-danger" href="https://www.burulas.com.tr/rayli-sistemler/bursaray" target="_blank">click
+                here</a>
             </p>
 
-            <h3 class="fw-light fs-3">Otobüs</h3>
+            <h3 class="fw-light fs-3">Bus</h3>
             <p class="mb-5 fs-6 fw-normal">Fuar alanımıza otobüs ile ulaşım için İETT otobüs bağlantılarını
               kullanarak Havalimanı Metrosu ‘Dünya Ticaret Merkezi-İstanbul Fuar Merkezi ’ istasyonunda
               inip ulaşabilirsiniz. Ayrıntılı bilgi için
-              <a class="text-danger" href="https://www.burulas.com.tr/otobus/" target="_blank">tıklayınız</a>
+              <a class="text-danger" href="https://www.burulas.com.tr/otobus/" target="_blank">click here</a>
             </p>
 
-            <h3 class="fw-light fs-3">Havayolu</h3>
-            <p class="mb-5 fs-6 fw-normal">İstanbul Havalimanı’ndan ulaşım sağlayacak katılımcı ve
-              ziyaretçilerimiz, Havaist ya da HVİST-10 otobüsleri aracılığı ile Yenibosna-Kuleli durağına
-              gelmelerinin ardından Havalimanı Metro bağlantısına ulaşıp ‘Dünya Ticaret Merkezi-İstanbul
-              Fuar Merkezi ’ istasyonundan fuar alanımıza gelebilirler.
+            <h3 class="fw-light fs-3">Airline</h3>
+            <p class="mb-5 fs-6 fw-normal">Participants and visitors who will be arriving from Istanbul Airport can take
+              the Havaist or HVIST-10 buses to the Yenibosna-Kuleli stop, then reach the Airport Metro connection and
+              come to our fairground from the 'World Trade Center-Istanbul Fair Center' station.
             </p>
 
-            <h3 class="fw-light fs-3">Araba</h3>
-            <p class="mb-5 fs-6 fw-normal">3 alternatif arterden kara yolu ile alanımıza ulaşabilirsiniz. (E5, TEM ve
-              sahil yolu)
+            <h3 class="fw-light fs-3">Car</h3>
+            <p class="mb-5 fs-6 fw-normal">You can reach our area by road from 3 alternative arteries (E5, TEM and
+              coastal road)
             </p>
           </div>
         </div>
@@ -325,7 +324,7 @@
           </p>
           <p>
             <a href="our-team.html" class="text-white" style="text-decoration: none;"
-              data-translate="footer.ourTeam">Our Teamz</a>
+              data-translate="footer.ourTeam">Our Team</a>
           </p>
           <p>
             <a href="quality-policy.html" class="text-white" style="text-decoration: none;"
@@ -506,8 +505,8 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <!-- Custom Scripts -->
-  <script src="../tr/hakkimizda.js"></script>
-  <script src="../tr/main.js"></script>
+  <script src="hakkimizda.js"></script>
+  <script src="main.js"></script>
 
 </body>
 
