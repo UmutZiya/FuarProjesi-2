@@ -2,63 +2,57 @@
 const initialCards = [
   {
     id: 1,
-    image:
-      "./images/ESTAblog1.jpeg",
+    image: "./images/ESTAblog1.jpeg",
     date: "06",
-    category: "Duyurular",
-    title: "ESTA 2025 MÜKEMMELLİK ÖDÜLLERİ SAHİPLERİNİ BULDU!",
+    category: "Announcements",
+    title: "ESTA 2025 EXCELLENCE AWARDS HAVE FOUND THEIR WINNERS!",
     text: "...",
-    link: "/tr/ornek-blog-1.html",
+    link: "/en/example-blog-1.html",
   },
   {
     id: 2,
-    image:
-      "./images/blog2.jpg",
+    image: "./images/blog2.jpg",
     date: "06",
-    category: "Duyurular",
-    title: "Yük Güvenliği: Aşırı Yüklenmenin Yapılar Üzerindeki Tehlikeleri",
+    category: "Announcements",
+    title: "Load Safety: Dangers of Overloading on Structures",
     text: "...",
-    link: "/tr/blog-single-page.html",
+    link: "/en/blog-single-page.html",
   },
   {
     id: 3,
-    image:
-      "./images/blog3.jpg",
+    image: "./images/blog3.jpg",
     date: "28",
-    category: "Gündem",
-    title: "Yük Analizinde Yapılan Yaygın Hatalar ve Önlemler",
+    category: "Agenda",
+    title: "Common Mistakes and Precautions in Load Analysis",
     text: "...",
-    link: "/tr/blog-single-page.html",
+    link: "/en/blog-single-page.html",
   },
   {
     id: 4,
-    image:
-      "./images/blog4.jpg",
+    image: "./images/blog4.jpg",
     date: "23",
     category: "Blog",
-    title: "Sürdürülebilir Yapılar İçin Yük Tasarımında Yeni Yaklaşımlar",
+    title: "New Approaches to Load Design for Sustainable Buildings",
     text: "...",
-    link: "/tr/blog-single-page.html",
+    link: "/en/blog-single-page.html",
   },
   {
     id: 5,
-    image:
-      "./images/blog5.jpg",
+    image: "./images/blog5.jpg",
     date: "23",
-    category: "Haberler",
-    title: 'Depreme Dayanıklı Yapılar İçin Yük Hesaplamaları Nasıl Yapılır?',
+    category: "News",
+    title: 'How to Make Load Calculations for Earthquake Resistant Structures?',
     text: "...",
-    link: "/tr/blog-single-page.html",
+    link: "/en/blog-single-page.html",
   },
   {
     id: 6,
-    image:
-      "./images/blog6.jpg",
+    image: "./images/blog6.jpg",
     date: "23",
-    category: "Haberler",
+    category: "News",
     title: "Yük Güvenliği: Aşırı Yüklenmenin Yapılar Üzerindeki Tehlikeleri",
     text: "...",
-    link: "/tr/blog-single-page.html",
+    link: "/en/blog-single-page.html",
   },
 ]
 
@@ -132,7 +126,7 @@ function renderCards(cards) {
     // Display a message if no cards match the filter
     const noResults = document.createElement("div")
     noResults.className = "no-results-blogs"
-    noResults.textContent = "Bu kategoride henüz içerik bulunmamaktadır."
+    noResults.textContent = "No content available in this category yet."
     cardGrid.appendChild(noResults)
     return
   }
@@ -186,21 +180,6 @@ function deleteCard(id) {
   return false
 }
 
-// Example of how to add a new card with a custom link
-function addNewCard() {
-  const newCard = {
-    image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-05-13%20132125-nP40jDkGttrnbERZLfFx5lBCwSGjW0.png",
-    date: "30",
-    category: "Blog",
-    title: "Yeni Etkinlik: Teknoloji Fuarı 2025 İstanbul'da Gerçekleşecek!",
-    text: "Teknoloji dünyasının en yeni gelişmeleri bu fuarda sergilenecek...",
-    link: "/etkinlikler/teknoloji-fuari-2025",
-  }
-
-  addCard(newCard)
-}
-
 // Initialize the page with cards and add click handlers
 document.addEventListener("DOMContentLoaded", () => {
   // Set up filter button click handlers
@@ -220,4 +199,4 @@ document.addEventListener("DOMContentLoaded", () => {
 window.addCard = addCard
 window.updateCard = updateCard
 window.deleteCard = deleteCard
-window.filterCards = filterCards
+window.filterCards = filterCards 
