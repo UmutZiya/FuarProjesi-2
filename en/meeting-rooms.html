@@ -10,6 +10,7 @@
     <!-- Css -->
     <link rel="stylesheet" href="../tr/assets/style.css">
     <link rel="stylesheet" href="../tr/assets/hakkimizda.css">
+    <link rel="stylesheet" href="../tr/assets/blog-single-page.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -45,7 +46,8 @@
 
             <div class="header-actions">
                 <div class="lang-switch mt-4 ms-4">
-                    <a href="../tr/toplanti-salonlari.html" class="">TR</a> | <a href="#" class="active" data-translate="lang.en">EN</a>
+                    <a href="../tr/toplanti-salonlari.html" class="">TR</a> | <a href="#" class="active"
+                        data-translate="lang.en">EN</a>
                 </div>
                 <!-- nav-toggle-button class'ı menüyü açar -->
 
@@ -73,8 +75,8 @@
             </div>
             <div class="menu-header-actions">
                 <div class="lang-switch">
-                    <a href="../tr/toplanti-salonlari.html" class="active" data-lang="tr" data-translate="lang.tr">TR</a> | <a href="#"
-                        data-lang="en" data-translate="lang.en">EN</a>
+                    <a href="../tr/toplanti-salonlari.html" class="active" data-lang="tr"
+                        data-translate="lang.tr">TR</a> | <a href="#" data-lang="en" data-translate="lang.en">EN</a>
                 </div>
                 <button class="close-menu-btn" data-translate-aria-label="menu.closeAriaLabel"
                     aria-label="Menüyü Kapat">
@@ -312,33 +314,40 @@
             </main>
         </div>
     </div>
+    <div class="container-bspg">
+        <h2>Toplantı Salonlarımız</h2>
 
-
-    <div class="container gallery-container">
-        <h2 class="gallery-title"></h2>
-        <div class="row">
-            <!-- Resim 1 -->
-            <div class="col-md-6 col-lg-3 img-container">
-                <img src="./images/deneme-1.jpg" alt="Resim 1" class="gallery-img">
-                <div class="img-caption"></div>
+        <!-- Galeri Slider -->
+        <div class="gallery-container-bspg">
+            <div class="gallery-wrapper-bspg" id="galleryWrapper">
+                <!-- JavaScript ile eklenecek -->
             </div>
 
-            <!-- Resim 2 -->
-            <div class="col-md-6 col-lg-3 img-container">
-                <img src="./images/deneme-2.jpg" alt="Resim 2" class="gallery-img">
-                <div class="img-caption"></div>
-            </div>
+            <button class="gallery-nav-bspg prev-bspg" id="prevBtn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+            <button class="gallery-nav-bspg next-bspg" id="nextBtn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+        </div>
 
-            <!-- Resim 3 -->
-            <div class="col-md-6 col-lg-3 img-container">
-                <img src="./images/deneme-3.jpg" alt="Resim 3" class="gallery-img">
-                <div class="img-caption"></div>
-            </div>
-
-            <!-- Resim 4 -->
-            <div class="col-md-6 col-lg-3 img-container">
-                <img src="./images/deneme-4.jpg" alt="Resim 4" class="gallery-img">
-                <div class="img-caption"></div>
+        <!-- Lightbox -->
+        <div class="lightbox-bspg" id="lightbox">
+            <div class="lightbox-content-bspg">
+                <img src="/placeholder.svg" alt="" id="lightboxImage">
+                <button class="close-lightbox-bspg" id="closeLightbox">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
             </div>
         </div>
     </div>
@@ -552,7 +561,7 @@
     <!-- Custom Scripts -->
     <script src="../tr/hakkimizda.js"></script>
     <script src="../tr/main.js"></script>
-
+    <script src="../tr/toplanti-salonlari.js"></script>
 </body>
 
 </html>
