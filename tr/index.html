@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="./assets/index.css">
   <link rel="stylesheet" href="./assets/card-slider-1.css">
   <link rel="stylesheet" href="./assets/arama-cubugu.css">
+  <link rel="stylesheet" href="./assets/header.css">
   <!-- Font Awesome -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +31,7 @@
 </head>
 
 <body>
- <!-- Header Start -->
+  <!-- Header Start -->
   <header class="main-header">
     <div class="container-navbar">
       <a href="index.html" class="logo mt-5">
@@ -41,47 +42,36 @@
       <nav class="main-nav">
         <ul class="nav-menu">
           <li class="nav-item">
-            <a href="#" class="nav-link">LES-EXPO <i class="fas fa-chevron-down"></i></a>
+            <a href="#" class="nav-link">BFM'yi Keşfedin <i class="fas fa-chevron-down"></i></a>
             <ul class="dropdown-menu">
-              <li><a href="hakkimizda.html">Hakkında</a></li>
-              <li><a href="fuar-kunyesi.html">Fuar Künyesi</a></li>
-              <li><a href="fuar-alani.html">Fuar Alanı</a></li>
-              <li><a href="ulasim.html">Nasıl Ulaşırım ?</a></li>
-              <li><a href="fuar-sonuc-raporu.html">Fuar Sonuç Raporu</a></li>
+              <li><a href="hakkimizda.html">Hakkımızda</a></li>
+              <li><a href="fuar-takvimi.html">BFM Fuar Takvimi</a></li>
+              <li><a href="toplanti-salonlari.html">Hazır Ofis Ve Toplantı Salonları</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Katılımcı <i class="fas fa-chevron-down"></i></a>
+            <a href="#" class="nav-link">BFM'de Fuar Organize Edin <i class="fas fa-chevron-down"></i></a>
             <ul class="dropdown-menu">
-              <li><a href="katilimci-profili.html">Katılımcı Profili</a></li>
-              <li><a href="on-kayit-formu.html">Ön Kayıt Formu</a></li>
-              <li><a href="neden-katilmalisiniz.html">Neden Katılmalısınız ?</a></li>
-              <li><a href="katilimci-listesi.html">Katılımcı Listesi 2025</a></li>
+              <li><a href="organizator.html">E-Broşürler</a></li>
+              <li><a href="diger-hizmetler.html">Diğer Hizmetler</a></li>
+              <li><a href="planlar.html">Planlar</a></li>
+              <li><a href="toplanti-salonlari.html">Toplantı Salonları</a></li>
+              <li><a href="ek-hizmetler.html">Ek Hizmetler</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Ziyaretçi <i class="fas fa-chevron-down"></i></a>
+            <a href="#" class="nav-link">BFM'yi Ziyaret Edin <i class="fas fa-chevron-down"></i></a>
             <ul class="dropdown-menu">
-              <li><a href="ziyaretci-profili.html">Ziyaretçi Profili</a></li>
-              <li><a href="neden-ziyaret-etmelisiniz.html">Neden Ziyaret Etmelisiniz ?</a></li>
-              <li><a href="sss.html">Sıkça Sorulan Sorular</a></li>
+              <li><a href="ulasim.html">Ulaşım</a></li>
+              <li><a href="konaklama.html">Konaklama</a></li>
+              <li><a href="restoran-ve-kafeler.html">Restoran ve Kafeler</a></li>
+              <li><a href="hizmetler.html">Hizmetler</a></li>
             </ul>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">Etkinlikler <i class="fas fa-chevron-down"></i></a>
             <ul class="dropdown-menu">
               <li><a href="b2b-toplantıları.html">B2B Toplantıları</a></li>
-              <li><a href="insights.html">LES Insights</a></li>
-              <li><a href="experience.html">LES Experience</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Medya <i class="fas fa-chevron-down"></i></a>
-            <ul class="dropdown-menu">
-              <li><a href="medya-logo.html">Logo</a></li>
-              <li><a href="tum-haberler.html">Haberler</a></li>
-              <li><a href="#">Galeri</a></li>
-              <li><a href="#">Kurumsal Kimlik</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -98,9 +88,16 @@
               <i class="fas fa-search"></i>
             </button>
           </div>
-          <a href="online-bilet.html" class="trigger-button">ONLINE BİLET</a>
-          <a href="index.html" class="active" data-lang="tr" data-translate="lang.tr">TR</a> | <a href="../en/home.html"
-            class="#" data-lang="en" data-translate="lang.en">EN</a>
+          <div class="lang-dropdown">
+            <button class="lang-dropdown-btn">
+              <span class="selected-lang">TR</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="lang-dropdown-content">
+              <a href="index.html" class="active">TR</a>
+              <a href="../en/home.html">EN</a>
+            </div>
+          </div>
         </div>
         <div class="mobile-actions">
           <button class="search-toggle-button" aria-label="Arama">
@@ -127,7 +124,93 @@
       </div>
     </div>
   </div>
+  <!-- Tam Ekran Overlay Menü -->
+  <div class="fullscreen-menu">
+    <div class="menu-header">
+      <a href="/tr" class="logo-menu">
+        <!-- Menüdeki logo -->
+        <img src="./images/logo-beyaz.png" alt="" class="fs-2">
+      </a>
 
+      <div class="menu-header-actions-fs">
+        <div class="lang-switch">
+          <a href="#" class="active" data-lang="tr" data-translate="lang.tr">TR</a> | <a href="../en/home.html" class=""
+            data-lang="en" data-translate="lang.en">EN</a>
+        </div>
+        <button class="close-menu-btn" aria-label="Menüyü Kapat">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="menu-content">
+      <div class="menu-column">
+        <!-- Başlığa tıklanınca menüyü kapatmak için nav-toggle-button ekledik -->
+        <h3 class="nav-toggle-button">LES-EXPO</h3>
+        <ul>
+          <li><a href="/tr/hakkimizda">Hakkında</a></li>
+          <li><a href="/tr/fuar-kunyesi">Fuar Künyesi</a></li>
+          <li><a href="/tr/fuar-alani">Fuar Alanı</a></li>
+          <li><a href="/tr/ulasim">Nasıl Ulaşırım ?</a></li>
+          <li><a href="">Fuar Sonuç Raporu</a></li>
+        </ul>
+      </div>
+      <div class="menu-column">
+        <h3 class="nav-toggle-button">Katılımcı</h3>
+        <ul>
+          <li><a href="/tr/katilimci-profili">Katılımcı Profili</a></li>
+          <li><a href="/tr/on-kayit-formu">Ön Kayıt Formu</a></li>
+          <li><a href="/tr/neden-katilmalisiniz">Neden Katılmalısınız ?</a></li>
+          <li><a href="/tr/katilimci-listesi">Katılımcı Listesi 2025</a></li>
+        </ul>
+      </div>
+      <div class="menu-column">
+        <h3 class="nav-toggle-button" data-translate="menu.visitBFM">Ziyaretçi</h3>
+        <ul>
+          <li><a href="/tr/ziyaretci-profili">Ziyaretçi Profili</a></li>
+          <li><a href="/tr/neden-ziyaret-etmelisiniz">Neden Ziyaret Etmelisiniz ?</a></li>
+          <li><a href="/tr/faq">Sıkça Sorulan Sorular</a></li>
+        </ul>
+      </div>
+      <div class="menu-column">
+        <h3 class="nav-toggle-button">ETKİNLİKLER</h3>
+        <ul>
+          <li><a href="/tr/b2b-toplantilari">B2B Toplantıları</a></li>
+          <li><a href="/tr/les-insights">LES Insights</a></li>
+          <li><a href="/tr/les-experience">LES Experience</a></li>
+        </ul>
+      </div>
+      <div class="menu-column">
+        <h3 class="nav-toggle-button">Medya</h3>
+        <ul>
+          <li><a href="/tr/medya-logo">Logo</a></li>
+          <li><a href="/tr/tum-haberler">Haberler</a></li>
+          <li><a href="#">Galeri</a></li>
+          <li><a href="#">Kurumsal Kimlik</a></li>
+        </ul>
+      </div>
+
+      <div class="menu-column">
+        <h3 class="nav-toggle-button">Bize Ulaşın</h3>
+        <ul>
+          <li><a href="/tr/iletisim">İletişim Bilgileri</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="menu-footer">
+      <!-- <span class="up-menu-f2f"> Powered By F2F Bilişim Reklam ve Danışmanlık Hizmetleri</span> -->
+      <span data-translate="menu.followUs">Bizi Takip Edin</span>
+      <div class="social-icons-menu">
+        <a href="https://www.facebook.com/lesexpofair" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://x.com/lesexpofair" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.instagram.com/lesexpofair/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@@lesexpofair" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.linkedin.com/company/yük-mühendisliği-birliği/" target="_blank"><i
+            class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
   <!-- Slider Start -->
   <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     <!-- Görsel slider'ları aktif etmek için bu kısımdaki yorum satırlarını kaldırmak yeterli. -->
@@ -191,8 +274,7 @@
   </button> -->
     <div class="action-buttons">
       <button class="trigger-button" data-translate="slider.triggerButton1" id="openModalBtn">E-Bilet</button>
-      <a href="stant-talebi-form.html" class="trigger-button" data-translate="slider.triggerButton2"
-        >Stant Talebi</a>
+      <a href="stant-talebi-form.html" class="trigger-button" data-translate="slider.triggerButton2">Stant Talebi</a>
     </div>
     <!-- Modal Overlay -->
     <div class="modal-overlay" id="modalOverlay">
