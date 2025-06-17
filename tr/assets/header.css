@@ -453,10 +453,83 @@ a {
   .menu-header-actions-fs .lang-switch {
     margin-top: 0 !important;
     margin-left: 0 !important;
+    position: relative;
+    display: inline-block;
   }
   
   .menu-header-actions-fs .lang-switch a {
     color: rgba(255, 255, 255, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    padding: 10px 20px;
+    min-width: 80px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .menu-header-actions-fs .lang-switch a.active {
+    color: #fff;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    position: relative;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    padding: 0;
+    min-width: auto;
+  }
+  
+  .menu-header-actions-fs .lang-switch:hover a {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  .menu-header-actions-fs .lang-switch:hover a.active {
+    background-color: transparent;
+    box-shadow: none;
+  }
+  
+  .menu-header-actions-fs .lang-switch::after {
+    content: '\f107';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+    display: inline-block;
+    font-size: 14px;
+  }
+  
+  .menu-header-actions-fs .lang-switch:hover::after {
+    transform: rotate(180deg);
+  }
+  
+  /* Dil seçenekleri için hover efekti */
+  .menu-header-actions-fs .lang-switch a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(0) scale(1.02);
+  }
+  
+  /* Aktif dil seçeneği için özel stil */
+  .menu-header-actions-fs .lang-switch a.active {
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Dropdown menü için animasyon gecikmesi */
+  .menu-header-actions-fs .lang-switch a:nth-child(2) {
+    transition-delay: 0.1s;
   }
   
   .close-menu-btn {
@@ -706,7 +779,7 @@ a {
     }
   
     .logo-menu img {
-      height: 40px;
+      height: 122px;
       /* Mobil menüdeki logo boyutu */
     }
   
@@ -788,30 +861,9 @@ a {
 
   .trigger-button:hover {
     background-color: transparent;
-    color: var(--primarycolor);
+    color: #fff;
+    transition: all 0.7s ease;
   }
-
-  .trigger-button-ob {
-    background-color: var(--primarycolor);
-    color: white;
-    padding: 6px 20px;
-    border-radius: 20px;
-    font-weight: 600;
-    font-size: 12px;
-    transition: all 0.3s ease;
-    border: 2px solid var(--primarycolor);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    box-shadow: 0 4px 15px rgba(0, 131, 132, 0.2);
-  }
-
-  .trigger-button-ob:hover {
-    background-color: transparent;
-    color: var(--primarycolor);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 131, 132, 0.3);
-  }
-
   /* Language Dropdown Styles */
   .lang-dropdown {
     position: relative;
@@ -830,6 +882,7 @@ a {
     gap: 5px;
     font-weight: 600;
     transition: all 0.3s ease;
+    flex-direction: row-reverse;
   }
 
   .lang-dropdown-btn:hover {
@@ -839,6 +892,8 @@ a {
   .lang-dropdown-btn i {
     font-size: 12px;
     transition: transform 0.3s ease;
+    margin-right: 5px;
+    margin-left: 0;
   }
 
   .lang-dropdown-content {
@@ -902,5 +957,19 @@ a {
     
     .lang-dropdown-content {
       min-width: 90px;
+    }
+  }
+
+  /* Mobil görünüm için ek düzenlemeler */
+  @media (max-width: 768px) {
+    .menu-header-actions-fs .lang-switch a {
+      min-width: 70px;
+      padding: 8px 15px;
+      font-size: 14px;
+    }
+    
+    .menu-header-actions-fs .lang-switch::after {
+      font-size: 12px;
+      margin-left: 5px;
     }
   }
