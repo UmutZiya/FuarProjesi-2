@@ -142,12 +142,13 @@ html {
 /* Footer */
 
 .footer a:hover {
-  color: rgb(71, 245, 245) !important;
+  
   transition: 0.5s;
 }
 
 .footer h5 {
   color: #fff;
+  font-weight: 700;
 }
 
 .footer-poweredby {
@@ -155,7 +156,7 @@ html {
 }
 
 .logo-footer {
-  height: 120px;
+  height: 176px;
   display: block;
 }
 
@@ -258,3 +259,179 @@ html {
 }
 
 /*====================== Footer Social Icons ====================*/
+.social-footer {
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.footer-title {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+  text-align: start;
+}
+
+.social-container {
+  display: flex;
+  justify-content: start;
+  gap: 30px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.social-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+  z-index: -1;
+}
+
+.social-link:hover {
+  transform: translateY(-8px) scale(1.15);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Instagram */
+.instagram::before {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+/* Facebook */
+.facebook::before {
+  background: linear-gradient(45deg, #1877f2, #0d65d9);
+}
+
+/* Twitter/X */
+.twitter::before {
+  background: linear-gradient(45deg, #000000, #333333);
+}
+
+/* YouTube */
+.youtube::before {
+  background: linear-gradient(45deg, #ff0000, #cc0000);
+}
+
+.social-link i {
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* X logosu için özel stil */
+.twitter .x-logo {
+  font-family: 'Arial Black', Arial, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .social-footer {
+    padding: 30px 25px;
+  }
+
+  .footer-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .social-container {
+    gap: 25px;
+  }
+
+  .social-link {
+    width: 55px;
+    height: 55px;
+    font-size: 1.3rem;
+  }
+
+  .twitter .x-logo {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .social-footer {
+    padding: 25px 20px;
+  }
+
+  .footer-title {
+    font-size: 1.3rem;
+    margin-bottom: 18px;
+  }
+
+  .social-container {
+    gap: 20px;
+  }
+
+  .social-link {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+
+  .twitter .x-logo {
+    font-size: 1.4rem;
+  }
+}
+
+/* Pulse efekti arka planda */
+.social-footer::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: pulse 6s ease-in-out infinite;
+  pointer-events: none;
+  z-index: -1;
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.3;
+  }
+
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0.1;
+  }
+}
+
+.social-footer {
+  position: relative;
+}
