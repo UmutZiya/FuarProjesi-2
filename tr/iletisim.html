@@ -20,7 +20,8 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> <link rel="icon" type="image" href="./images/bfm-opak-logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="icon" type="image" href="./images/bfm-opak-logo.png">
 
 </head>
 
@@ -180,16 +181,18 @@
             </div>
         </div>
 
-       <div class="menu-footer">
-      <!-- <span class="up-menu-f2f"> Powered By F2F Bilişim Reklam ve Danışmanlık Hizmetleri</span> -->
-      <span data-translate="menu.followUs">Bizi Takip Edin</span>
-      <div class="social-icons-menu">
-        <a href="https://www.facebook.com/bursafuarmerkezi" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://x.com/burfuarmerkezi" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-        <a href="https://www.instagram.com/bursafuarmerkezi/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.youtube.com/@BursaFuarMerkezi" target="_blank"><i class="fab fa-youtube"></i></a>
-      </div>
-    </div>
+        <div class="menu-footer">
+            <!-- <span class="up-menu-f2f"> Powered By F2F Bilişim Reklam ve Danışmanlık Hizmetleri</span> -->
+            <span data-translate="menu.followUs">Bizi Takip Edin</span>
+            <div class="social-icons-menu">
+                <a href="https://www.facebook.com/bursafuarmerkezi" target="_blank"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/burfuarmerkezi" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/bursafuarmerkezi/" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@BursaFuarMerkezi" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
     </div>
 
     <div class="banner">
@@ -259,9 +262,8 @@
                         </div>
 
                         <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="terms" required>
-                            <label class="form-check-label" for="terms" data-translate="iletisim.termsText">Web
-                                sitesinin şartlar ve koşullar sayfasını okudum ve kabul ediyorum *</label>
+                            <input type="checkbox" class="form-check-input-if" id="terms-if" required readonly style="cursor:pointer;">
+                            <label class="form-check-label-if" for="terms-if" data-translate="iletisim.termsText" style="cursor:pointer;">Web sitesinin şartlar ve koşullar sayfasını okudum ve kabul ediyorum *</label>
                         </div>
 
                         <div class="row mb-3">
@@ -395,29 +397,29 @@
                 <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3 ps-5">
                     <img src="images/logo-beyaz.png" class="logo-footer" alt="">
                     <hr>
-                              <div class="card-footer">
-            <div class="social-footer">
-              <h2 class="footer-title">Bizi Takip Edin !</h2>
-              <div class="social-container">
-                <a href="https://www.instagram.com/bursafuarmerkezi/" class="social-link instagram" target="_blank"
-                  rel="noopener noreferrer" aria-label="Instagram">
-                  <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.facebook.com/bursafuarmerkezi" class="social-link facebook" target="_blank"
-                  rel="noopener noreferrer" aria-label="Facebook">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://x.com/burfuarmerkezi" class="social-link twitter" target="_blank"
-                  rel="noopener noreferrer" aria-label="X (Twitter)">
-                  <span class="x-logo">𝕏</span>
-                </a>
-                <a href="https://www.youtube.com/@BursaFuarMerkezi" class="social-link youtube" target="_blank"
-                  rel="noopener noreferrer" aria-label="YouTube">
-                  <i class="fab fa-youtube"></i>
-                </a>
-              </div>
-            </div>
-          </div>
+                    <div class="card-footer">
+                        <div class="social-footer">
+                            <h2 class="footer-title">Bizi Takip Edin !</h2>
+                            <div class="social-container">
+                                <a href="https://www.instagram.com/bursafuarmerkezi/" class="social-link instagram"
+                                    target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://www.facebook.com/bursafuarmerkezi" class="social-link facebook"
+                                    target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://x.com/burfuarmerkezi" class="social-link twitter" target="_blank"
+                                    rel="noopener noreferrer" aria-label="X (Twitter)">
+                                    <span class="x-logo">𝕏</span>
+                                </a>
+                                <a href="https://www.youtube.com/@BursaFuarMerkezi" class="social-link youtube"
+                                    target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -673,15 +675,14 @@
         </div>
     </div>
 
-    <!-- KVKK Modal -->
-    <div class="modal-overlay" id="kvkkModal">
-        <div class="modal-container">
-            <div class="modal-header">
-                <h3 class="modal-title">6698 SAYILI KİŞİSEL VERİLERİN KORUNMASI KANUNU GEREĞİNCE BİLGİLENDİRME</h3>
-                <button class="close-button" id="closeKvkkModal">&times;</button>
+    <!-- KVKK Modal for Form (kvkk-if) -->
+    <div class="modal-overlay-if" id="kvkkModal-if">
+        <div class="modal-container-if">
+            <div class="modal-header-if">
+                <h3 class="modal-title-if">6698 SAYILI KİŞİSEL VERİLERİN KORUNMASI KANUNU GEREĞİNCE BİLGİLENDİRME</h3>
             </div>
-            <div class="modal-content">
-                <div class="kvkk-content">
+            <div class="modal-content-if">
+                <div class="kvkk-content-if">
                     <h3>6698 SAYILI KİŞİSEL VERİLERİN KORUNMASI KANUNU GEREĞİNCE BİLGİLENDİRME</h3>
                     <p><strong>Veri sorumlusunun ve varsa temsilcisinin kimliği;</strong><br>
                         Bu bilgilendirme, 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") kapsamında, Veri
@@ -801,6 +802,10 @@
                     <p>Bu kapsamda yapacağınız başvurular mümkün olan en kısa zaman diliminde ve en çok 30 gün
                         içerisinde sonuçlandırılacaktır.</p> <br>
                 </div>
+            </div>
+            <div class="modal-footer-if">
+                <button class="btn btn-secondary close-button-if" id="closeKvkkModal-if">Kapat</button>
+                <button class="btn btn-primary accept-button-if" id="acceptKvkkModal-if">Kabul Ediyorum</button>
             </div>
         </div>
     </div>

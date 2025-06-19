@@ -12,6 +12,13 @@ document.addEventListener('DOMContentLoaded', function() {
   const privacyLink = document.getElementById('privacyLink');
   const kvkkLink = document.getElementById('kvkkLink');
 
+  // KVKK Modal for Form (kvkk-if)
+  const kvkkModalIf = document.getElementById('kvkkModal-if');
+  const closeKvkkModalIf = document.getElementById('closeKvkkModal-if');
+  const acceptKvkkModalIf = document.getElementById('acceptKvkkModal-if');
+  const termsCheckboxIf = document.getElementById('terms-if');
+  const termsLabelIf = document.querySelector('label[for="terms-if"]');
+
   // Function to open modal
   function openModal(modal) {
     modal.style.display = 'flex';
@@ -86,4 +93,73 @@ document.addEventListener('DOMContentLoaded', function() {
       closeModal(kvkkModal);
     }
   });
+
+  function openKvkkModalIf() {
+    kvkkModalIf.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
+  function closeKvkkModalIfFunc() {
+    kvkkModalIf.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }
+
+  if (termsCheckboxIf) {
+    termsCheckboxIf.addEventListener('click', function(e) {
+      e.preventDefault();
+      openKvkkModalIf();
+    });
+  }
+  if (termsLabelIf) {
+    termsLabelIf.addEventListener('click', function(e) {
+      e.preventDefault();
+      openKvkkModalIf();
+    });
+  }
+  if (closeKvkkModalIf) {
+    closeKvkkModalIf.addEventListener('click', function() {
+      closeKvkkModalIfFunc();
+    });
+  }
+  if (acceptKvkkModalIf) {
+    acceptKvkkModalIf.addEventListener('click', function() {
+      termsCheckboxIf.checked = true;
+      closeKvkkModalIfFunc();
+    });
+  }
+  // Modal dışına tıklayınca kapansın
+  window.addEventListener('click', function(e) {
+    if (e.target === kvkkModalIf) {
+      closeKvkkModalIfFunc();
+    }
+  });
+  // Escape ile kapansın
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && kvkkModalIf.style.display === 'flex') {
+      closeKvkkModalIfFunc();
+    }
+  });
+
+  // --- GÖNDER butonunu KVKK kabul edilmeden pasif yap ---
+  function updateSubmitButtonState() {
+    const submitBtn = document.querySelector('button[type="submit"].btn-submit');
+    if (submitBtn && termsCheckboxIf) {
+      submitBtn.disabled = !termsCheckboxIf.checked;
+      if (submitBtn.disabled) {
+        submitBtn.classList.add('btn-submit-disabled');
+      } else {
+        submitBtn.classList.remove('btn-submit-disabled');
+      }
+    }
+  }
+  // Sayfa yüklenince ve checkbox değişince kontrol et
+  updateSubmitButtonState();
+  if (termsCheckboxIf) {
+    termsCheckboxIf.addEventListener('change', updateSubmitButtonState);
+  }
+  // Modal kabulünde de kontrol et
+  if (acceptKvkkModalIf) {
+    acceptKvkkModalIf.addEventListener('click', function() {
+      updateSubmitButtonState();
+    });
+  }
 });
