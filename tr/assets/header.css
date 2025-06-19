@@ -138,7 +138,7 @@ a {
   }
   
   .main-nav .nav-item:hover .nav-link {
-    color: var(--primarycolor);
+    color: #fff;
   }
   
   .main-nav .nav-item:hover .nav-link i {
@@ -734,8 +734,9 @@ a {
   
     /* Mobil görünümde scroll durumunda arka planı kaldır */
     .main-header.scrolled {
-      background-color: transparent;
+      background-color: var(--primarycolor);
       box-shadow: none;
+      height: 123px !important;
     }
   
     .main-nav ul li a {
@@ -793,6 +794,7 @@ a {
   @media (max-width: 480px) {
     .container-navbar {
       padding: 0 15px;
+      margin-top: 20px;
     }
   
     .logo img {
