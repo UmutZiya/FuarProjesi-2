@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="./assets/arama-cubugu.css">
   <link rel="stylesheet" href="./assets/header.css">
   <link rel="stylesheet" href="./assets/kvkk.css">
+  <link rel="stylesheet" href="./assets/splash-screen.css">
   <!-- Font Awesome -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,12 +28,69 @@
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Swiper CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> <link rel="icon" type="image" href="./images/bfm-opak-logo.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="icon" type="image" href="./images/bfm-opak-logo.png">
 
   <link rel="icon" type="image" href="./images/bfm-opak-logo.png">
 </head>
 
 <body>
+
+  <!-- Modern Splash Screen -->
+  <div class="splash-screen-spc" id="splashScreen">
+    <div class="modern-curtain-spc"></div>
+
+    <!-- Animated Grid Background -->
+    <div class="grid-background-spc"></div>
+
+    <div class="splash-content-spc">
+      <!-- Stick Formation Container -->
+      <div class="stick-formation-spc" id="stickFormation">
+        <!-- 30 Stick Particles that will form the building -->
+        <div class="stick-particle-spc"></div>
+        <div class="stick-particle-spc"></div>
+        <div class="stick-particle-spc"></div>
+        <div class="stick-particle-spc"></div>
+        <div class="stick-particle-spc"></div>
+        <div class="stick-particle-spc"></div>
+        <div class="stick-particle-spc"></div>
+        <div class="stick-particle-spc"></div>
+        <div class="stick-particle-spc"></div>
+        <div class="stick-particle-spc"></div>
+        <div class="stick-particle-spc"></div>
+        <div class="stick-particle-spc"></div>
+        <div class="stick-particle-spc"></div>
+        <div class="stick-particle-spc"></div>
+        <div class="stick-particle-spc"></div>
+        <div class="stick-particle-spc"></div>
+        <div class="stick-particle-spc"></div>
+        <div class="stick-particle-spc"></div>
+        <div class="stick-particle-spc"></div>
+        <div class="stick-particle-spc"></div>
+        <div class="stick-particle-spc"></div>
+        <div class="stick-particle-spc"></div>
+        <div class="stick-particle-spc"></div>
+        <div class="stick-particle-spc"></div>
+        <div class="stick-particle-spc"></div>
+        <div class="stick-particle-spc"></div>
+        <div class="stick-particle-spc"></div>
+        <div class="stick-particle-spc"></div>
+        <div class="stick-particle-spc"></div>
+        <div class="stick-particle-spc"></div>
+      </div>
+
+      <!-- Building Title -->
+      <div class="building-title-spc">Bursa Fuar Merkezi</div>
+
+      <!-- Modern Logo -->
+      <div class="modern-logo-container-spc">
+        <div class="logo-icon-part-spc"></div>
+        <div class="logo-text-part-spc"></div>
+      </div>
+    </div>
+  </div>
+
+
   <!-- Header Start -->
   <header class="main-header">
     <div class="container-navbar">
@@ -200,7 +258,7 @@
     </div>
   </div>
   <!-- Slider Start -->
-  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div id="myCarousel" class="carousels slide" data-bs-ride="carousel">
     <!-- Görsel slider'ları aktif etmek için bu kısımdaki yorum satırlarını kaldırmak yeterli. -->
     <!-- <div class="carousel-indicators">
     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
@@ -567,93 +625,95 @@
   </template>
   <br><br><br><br>
   <!-- Footer Start -->
-  <footer class="bg-dark text-white pt-5  footer">
+    <footer class="bg-dark text-white pt-5  footer">
 
-    <div class="container text-md-left">
+        <div class="container text-md-left">
 
-      <div class="row text-md-left">
+            <div class="row text-md-left">
 
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-          <h5 class="text-uppercase mb-4 font-weight-bold " data-translate="footer.discoverBFM">BFM'yi Keşfedin</h5>
-          <p>
-            <a href="hakkimizda.html" class="text-white" style="text-decoration: none;"
-              data-translate="footer.aboutBFM">BFM Hakkında</a>
-          </p>
-          <p>
-            <a href="ekibimiz.html" class="text-white" style="text-decoration: none;"
-              data-translate="footer.ourTeam">Ekibimiz</a>
-          </p>
-          <p>
-            <a href="kalite-politimiz.html" class="text-white" style="text-decoration: none;"
-              data-translate="footer.qualityPolicy">Kalite Politikamız</a>
-          </p>
-          <p>
-            <a href="kvkk-dokumanları.html" class="text-white" style="text-decoration: none;"
-              data-translate="footer.kvkkDocuments">KVKK Dökümanları</a>
-          </p>
-        </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold " data-translate="footer.discoverBFM">BFM'yi
+                        Keşfedin</h5>
+                    <p>
+                        <a href="hakkimizda.html" class="text-white" style="text-decoration: none;"
+                            data-translate="footer.aboutBFM">BFM Hakkında</a>
+                    </p>
+                    <p>
+                        <a href="ekibimiz.html" class="text-white" style="text-decoration: none;"
+                            data-translate="footer.ourTeam">Ekibimiz</a>
+                    </p>
+                    <p>
+                        <a href="kalite-politimiz.html" class="text-white" style="text-decoration: none;"
+                            data-translate="footer.qualityPolicy">Kalite Politikamız</a>
+                    </p>
+                    <p>
+                        <a href="kvkk-dokumanları.html" class="text-white" style="text-decoration: none;"
+                            data-translate="footer.kvkkDocuments">KVKK Dökümanları</a>
+                    </p>
+                </div>
 
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 ">
-          <h5 class="text-uppercase mb-4 font-weight-bold " data-translate="footer.organizeFair">BFM'de Fuar Organize
-            Edin</h5>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 ">
+                    <h5 class="text-uppercase mb-4 font-weight-bold " data-translate="footer.organizeFair">BFM'de Fuar
+                        Organize
+                        Edin</h5>
 
-          <p>
-            <a href="planlar.html" class="text-white" style="text-decoration: none;"
-              data-translate="footer.plans">Planlar</a>
-          </p>
-          <p>
-            <a href="organizator.html" class="text-white" style="text-decoration: none;"
-              data-translate="footer.eBrochures">E-Broşürler</a>
-          </p>
-          <p>
-            <a href="toplanti-salonlari.html" class="text-white" style="text-decoration: none;"
-              data-translate="footer.meetingRooms">Toplantı Salonları</a>
-          </p>
-          <p>
-            <a href="ek-hizmetler.html" class="text-white" style="text-decoration: none;"
-              data-translate="footer.extraServices">Ek Hizmetler</a>
-          </p>
-        </div>
+                    <p>
+                        <a href="planlar.html" class="text-white" style="text-decoration: none;"
+                            data-translate="footer.plans">Planlar</a>
+                    </p>
+                    <p>
+                        <a href="organizator.html" class="text-white" style="text-decoration: none;"
+                            data-translate="footer.eBrochures">E-Broşürler</a>
+                    </p>
+                    <p>
+                        <a href="toplanti-salonlari.html" class="text-white" style="text-decoration: none;"
+                            data-translate="footer.meetingRooms">Toplantı Salonları</a>
+                    </p>
+                    <p>
+                        <a href="ek-hizmetler.html" class="text-white" style="text-decoration: none;"
+                            data-translate="footer.extraServices">Ek Hizmetler</a>
+                    </p>
+                </div>
 
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 ">
-          <h5 class="text-uppercase mb-4 font-weight-bold " data-translate="footer.bfmAgenda">BFM Gündem</h5>
-          <p>
-            <a href="tum-haberler.html" class="text-white" style="text-decoration: none;"
-              data-translate="footer.fairAnnouncements">Fuar Duyuruları</a>
-          </p>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 ">
+                    <h5 class="text-uppercase mb-4 font-weight-bold " data-translate="footer.bfmAgenda">BFM Gündem</h5>
+                    <p>
+                        <a href="tum-haberler.html" class="text-white" style="text-decoration: none;"
+                            data-translate="footer.fairAnnouncements">Fuar Duyuruları</a>
+                    </p>
 
-          <p>
-            <a href="tum-haberler.html" class="text-white" style="text-decoration: none;"
-              data-translate="footer.newsFromBFM">BFM'den Haberler</a>
-          </p>
+                    <p>
+                        <a href="tum-haberler.html" class="text-white" style="text-decoration: none;"
+                            data-translate="footer.newsFromBFM">BFM'den Haberler</a>
+                    </p>
 
-          <p>
-            <a href="tum-haberler.html" class="text-white" style="text-decoration: none;"
-              data-translate="footer.fairNews">Fuar Haberleri</a>
-          </p>
+                    <p>
+                        <a href="tum-haberler.html" class="text-white" style="text-decoration: none;"
+                            data-translate="footer.fairNews">Fuar Haberleri</a>
+                    </p>
 
-        </div>
+                </div>
 
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 ">
-          <h5 class="text-uppercase mb-4 font-weight-bold" data-translate="footer.contactUs">Bize Ulaşın</h5>
-          <p data-translate="footer.address">
-            Fuar ve Kongre Merkezi Altınova Mah. Fuar Cad. 25 / 1 16250 Osmangazi, BURSA
-          </p>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 ">
+                    <h5 class="text-uppercase mb-4 font-weight-bold" data-translate="footer.contactUs">Bize Ulaşın</h5>
+                    <p data-translate="footer.address">
+                        Fuar ve Kongre Merkezi Altınova Mah. Fuar Cad. 25 / 1 16250 Osmangazi, BURSA
+                    </p>
 
-          <p>
-            info@kfa.com.tr
-          </p>
+                    <p>
+                        info@kfa.com.tr
+                    </p>
 
-          <p>
-            (0224) 211 50 82
-          </p>
+                    <p>
+                        (0224) 211 50 82
+                    </p>
 
-        </div>
+                </div>
 
-        <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3 ps-5">
-          <img src="images/logo-beyaz.png" class="logo-footer" alt="">
-          <hr>
-          <div class="card-footer">
+                <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3 ps-5">
+                    <img src="images/logo-beyaz.png" class="logo-footer" alt="">
+                    <hr>
+                              <div class="card-footer">
             <div class="social-footer">
               <h2 class="footer-title">Bizi Takip Edin !</h2>
               <div class="social-container">
@@ -677,48 +737,48 @@
             </div>
           </div>
 
+                </div>
+            </div>
+
+            <hr class="mb-4">
+
+            <div class="row align-item-center">
+                <div class="col-md-7 col-lg-8">
+                    <a>
+                        <span data-translate="footer.poweredBy">Powered By</span> <a class="footer-poweredby"
+                            href="https://f2fbilisim.com" target="_blank" style="text-decoration: none;"
+                            data-translate="footer.poweredByCompany">F2F Bilişim Reklam ve Danışmanlık Hizmetleri</a>
+                    </a>
+
+                </div>
+
+                <div class="col-md-5 col-lg-4">
+                    <div class="text-center text-md-right">
+
+                        <ul class="list-unstyled list-inline">
+                            <li>
+                                <a href="#" class="btn-floating btn-sm text-white fw-normal" id="termsLink"
+                                    data-translate="footer.termsAndConditions">
+                                    Kullanıcı Sözleşmesi
+                                </a>
+                                <a href="#" class="btn-floating btn-sm text-white ms-4 fw-normal" id="privacyLink"
+                                    data-translate="footer.privacyPolicy">
+                                    Gizlilik Politikası
+                                </a>
+                                <a href="#" class="btn-floating btn-sm text-white ms-4 fw-normal" id="kvkkLink">
+                                    KVKK
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+            <br> <br> <br>
         </div>
-      </div>
-
-      <hr class="mb-4">
-
-      <div class="row align-item-center">
-        <div class="col-md-7 col-lg-8">
-          <a>
-            <span data-translate="footer.poweredBy">Powered By</span> <a class="footer-poweredby"
-              href="https://f2fbilisim.com" target="_blank" style="text-decoration: none;"
-              data-translate="footer.poweredByCompany">F2F Bilişim Reklam ve Danışmanlık Hizmetleri</a>
-          </a>
-
-        </div>
-
-        <div class="col-md-5 col-lg-4">
-          <div class="text-center text-md-right">
-
-            <ul class="list-unstyled list-inline">
-              <li>
-                <a href="#" class="btn-floating btn-sm text-white fw-normal" id="termsLink"
-                  data-translate="footer.termsAndConditions">
-                  Kullanıcı Sözleşmesi
-                </a>
-                <a href="#" class="btn-floating btn-sm text-white ms-4 fw-normal" id="privacyLink"
-                  data-translate="footer.privacyPolicy">
-                  Gizlilik Politikası
-                </a>
-                <a href="#" class="btn-floating btn-sm text-white ms-4 fw-normal" id="kvkkLink">
-                  KVKK
-                </a>
-              </li>
-
-            </ul>
-
-          </div>
-        </div>
-
-      </div>
-      <br> <br> <br>
-    </div>
-  </footer>
+    </footer>
   <!-- Terms & Conditions Modal -->
   <div class="modal-overlay" id="termsModal">
     <div class="modal-container">
@@ -1044,6 +1104,8 @@
   <script src="anasayfa-fuar-takvimi.js"></script>
   <script src="card-slider-2.js"></script>
   <script src="kvkk.js"></script>
+  <script src="splash-screen.js"></script>
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"
     integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+"
     crossorigin="anonymous"></script>

@@ -26,10 +26,6 @@ html {
 
 /* Header */
 
-/* Menü açıkken scroll'u engelle */
-
-
-
 /* Slider */
 .carousel-item {
   position: relative;
@@ -86,7 +82,7 @@ html {
 
 /* Slider image */
 .img-1 {
-  filter: brightness(42%);
+  filter: brightness(100%);
   /* No longer needed for video */
 }
 
