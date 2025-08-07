@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,328 +18,363 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-      <!-- Swiper CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> <link rel="icon" type="image" href="./images/bfm-opak-logo.png">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="icon" type="image" href="./images/bfm-opak-logo.png">
 
 </head>
+
 <body>
-    <!-- Header Start -->
-    <header class="main-header">
-        <div class="container-navbar">
-          <a href="index.html" class="logo mt-5">
-            <!-- Gerçek logo dosyanızın yolunu buraya ekleyin -->
-            <img src="./images/logo-beyaz.png" class="" alt="">
-          </a>
-    
-          <nav class="main-nav">
-            <ul class="nav-menu">
-              <li class="nav-item">
-                <a href="#" class="nav-link">BFM'yi Keşfedin <i class="fas fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                  <li><a href="hakkimizda.html">Hakkımızda</a></li>
-                  <li><a href="fuar-takvimi.html">BFM Fuar Takvimi</a></li>
-                  <li><a href="toplanti-salonlari.html">Hazır Ofis Ve Toplantı Salonları</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">BFM'de Fuar Organize Edin <i class="fas fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                  <li><a href="organizator.html">E-Broşürler</a></li>
-                  <li><a href="diger-hizmetler.html">Diğer Hizmetler</a></li>
-                  <li><a href="planlar.html">Planlar</a></li>
-                  <li><a href="toplanti-salonlari.html">Toplantı Salonları</a></li>
-                  <li><a href="ek-hizmetler.html">Ek Hizmetler</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">BFM'yi Ziyaret Edin <i class="fas fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                  <li><a href="ulasim.html">Ulaşım</a></li>
-                  <li><a href="konaklama.html">Konaklama</a></li>
-                  <li><a href="restoran-ve-kafeler.html">Restoran ve Kafeler</a></li>
-                  <li><a href="hizmetler.html">Hizmetler</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Etkinlikler <i class="fas fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">B2B Toplantıları</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="iletisim.html" class="nav-link">Bize Ulaşın</a>
-              </li>
-            </ul>
-          </nav>
-    
-          <div class="header-actions">
-            <div class="lang-switch mt-4">
-              <div class="header-search">
-                <input type="text" class="header-search-input" placeholder="Ara...">
-                <button class="header-search-button">
-                  <i class="fas fa-search"></i>
-                </button>
-              </div>
-              <div class="lang-dropdown">
-                <button class="lang-dropdown-btn">
-                  <span class="selected-lang">TR</span>
-                  <i class="fas fa-chevron-down"></i>
-                </button>
-                <div class="lang-dropdown-content">
-                  <a href="index.html" class="active">TR</a>
-                  <a href="../en/fair-single-page.html">EN</a>
-                </div>
-              </div>
-            </div>
-            <div class="mobile-actions">
-              <button class="search-toggle-button" aria-label="Arama">
-                <i class="fas fa-search"></i>
-              </button>
-              <button class="mobile-menu-toggle nav-toggle-button" data-translate-aria-label="menu.toggleAriaLabel"
-                aria-label="Menüyü Aç/Kapat">
-                <i class="fas fa-bars"></i>
-              </button>
-            </div>
-          </div>
-    
-        </div>
-      </header>
-      <!-- Header End -->
-      <!-- Mobil Arama Çubuğu -->
-      <div class="search-overlay">
-        <div class="search-container">
-          <div class="search-content">
-            <input type="text" class="search-input" placeholder="Aramak istediğiniz kelimeyi yazınız...">
-            <button class="search-close">
-              <i class="fas fa-times"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-      <!-- Tam Ekran Overlay Menü -->
-      <div class="fullscreen-menu">
-        <div class="menu-header">
-          <a href="index.html" class="logo-menu">
-            <!-- Menüdeki logo -->
-            <img src="./images/logo-beyaz.png" alt="" class="fs-2">
-          </a>
-    
-          <div class="menu-header-actions-fs">
-            <div class="lang-switch">
-              <a href="#" class="active" data-lang="tr" data-translate="lang.tr">TR</a>
-              <a href="../en/fair-single-page.html" data-lang="en" data-translate="lang.en">EN</a>
-            </div>
-            <button class="close-menu-btn" aria-label="Menüyü Kapat">
-              <i class="fas fa-times"></i>
-            </button>
-          </div>
-        </div>
-    
-        <div class="menu-content">
-          <div class="menu-column">
-            <!-- Başlığa tıklanınca menüyü kapatmak için nav-toggle-button ekledik -->
-            <h3 class="nav-toggle-button">BFM'yi Keşfedin</h3>
-            <ul>
+  <!-- Header Start -->
+  <header class="main-header">
+    <div class="container-navbar">
+      <a href="index.html" class="logo mt-5">
+        <!-- Gerçek logo dosyanızın yolunu buraya ekleyin -->
+        <img src="./images/logo-beyaz.png" class="" alt="">
+      </a>
+
+      <nav class="main-nav">
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link">BFM'yi Keşfedin <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
               <li><a href="hakkimizda.html">Hakkımızda</a></li>
               <li><a href="fuar-takvimi.html">BFM Fuar Takvimi</a></li>
               <li><a href="toplanti-salonlari.html">Hazır Ofis Ve Toplantı Salonları</a></li>
             </ul>
-          </div>
-          <div class="menu-column">
-            <h3 class="nav-toggle-button">BFM'de Fuar Organize Edin</h3>
-            <ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">BFM'de Fuar Organize Edin <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
               <li><a href="organizator.html">E-Broşürler</a></li>
               <li><a href="diger-hizmetler.html">Diğer Hizmetler</a></li>
               <li><a href="planlar.html">Planlar</a></li>
               <li><a href="toplanti-salonlari.html">Toplantı Salonları</a></li>
               <li><a href="ek-hizmetler.html">Ek Hizmetler</a></li>
             </ul>
-          </div>
-          <div class="menu-column">
-            <h3 class="nav-toggle-button" data-translate="menu.visitBFM">BFM'yi Ziyaret Edin</h3>
-            <ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">BFM'yi Ziyaret Edin <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
               <li><a href="ulasim.html">Ulaşım</a></li>
               <li><a href="konaklama.html">Konaklama</a></li>
               <li><a href="restoran-ve-kafeler.html">Restoran ve Kafeler</a></li>
               <li><a href="hizmetler.html">Hizmetler</a></li>
             </ul>
-          </div>
-          <div class="menu-column">
-            <h3 class="nav-toggle-button">Etkinlikler</h3>
-            <ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Etkinlikler <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
               <li><a href="#">B2B Toplantıları</a></li>
             </ul>
+          </li>
+          <li class="nav-item">
+            <a href="iletisim.html" class="nav-link">Bize Ulaşın</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switch mt-4">
+          <div class="header-search">
+            <input type="text" class="header-search-input" placeholder="Ara...">
+            <button class="header-search-button">
+              <i class="fas fa-search"></i>
+            </button>
           </div>
-          <div class="menu-column">
-            <h3 class="nav-toggle-button">Bize Ulaşın</h3>
-            <ul>
-              <li><a href="iletisim.html">İletişim Bilgileri</a></li>
-            </ul>
+          <div class="lang-dropdown">
+            <button class="lang-dropdown-btn">
+              <span class="selected-lang">TR</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="lang-dropdown-content">
+              <a href="index.html" class="active">TR</a>
+              <a href="../en/fair-single-page.html">EN</a>
+            </div>
           </div>
         </div>
-    
-        <div class="menu-footer">
-          <!-- <span class="up-menu-f2f"> Powered By F2F Bilişim Reklam ve Danışmanlık Hizmetleri</span> -->
-          <span data-translate="menu.followUs">Bizi Takip Edin</span>
-          <div class="social-icons-menu">
-            <a href="https://www.facebook.com/lesexpofair" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://x.com/lesexpofair" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="https://www.instagram.com/lesexpofair/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.youtube.com/@@lesexpofair" target="_blank"><i class="fab fa-youtube"></i></a>
-            <a href="https://www.linkedin.com/company/yük-mühendisliği-birliği/" target="_blank"><i
-                class="fab fa-linkedin-in"></i></a>
-          </div>
+        <div class="mobile-actions">
+          <button class="search-toggle-button" aria-label="Arama">
+            <i class="fas fa-search"></i>
+          </button>
+          <button class="mobile-menu-toggle nav-toggle-button" data-translate-aria-label="menu.toggleAriaLabel"
+            aria-label="Menüyü Aç/Kapat">
+            <i class="fas fa-bars"></i>
+          </button>
         </div>
       </div>
-    
-        <div class="banner">
-          
-        </div> 
 
-<div class="container mt-4">
+    </div>
+  </header>
+  <!-- Header End -->
+  <!-- Mobil Arama Çubuğu -->
+  <div class="search-overlay">
+    <div class="search-container">
+      <div class="search-content">
+        <input type="text" class="search-input" placeholder="Aramak istediğiniz kelimeyi yazınız...">
+        <button class="search-close">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- Tam Ekran Overlay Menü -->
+  <div class="fullscreen-menu">
+    <div class="menu-header">
+      <a href="index.html" class="logo-menu">
+        <!-- Menüdeki logo -->
+        <img src="./images/logo-beyaz.png" alt="" class="fs-2">
+      </a>
+
+      <div class="menu-header-actions-fs">
+        <div class="lang-switch">
+          <a href="#" class="active" data-lang="tr" data-translate="lang.tr">TR</a>
+          <a href="../en/fair-single-page.html" data-lang="en" data-translate="lang.en">EN</a>
+        </div>
+        <button class="close-menu-btn" aria-label="Menüyü Kapat">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="menu-content">
+      <div class="menu-column">
+        <!-- Başlığa tıklanınca menüyü kapatmak için nav-toggle-button ekledik -->
+        <h3 class="nav-toggle-button">BFM'yi Keşfedin</h3>
+        <ul>
+          <li><a href="hakkimizda.html">Hakkımızda</a></li>
+          <li><a href="fuar-takvimi.html">BFM Fuar Takvimi</a></li>
+          <li><a href="toplanti-salonlari.html">Hazır Ofis Ve Toplantı Salonları</a></li>
+        </ul>
+      </div>
+      <div class="menu-column">
+        <h3 class="nav-toggle-button">BFM'de Fuar Organize Edin</h3>
+        <ul class="dropdown-menu">
+                            <li><a href="organizator.html">E-Broşürler</a></li>
+                            <li><a href="diger-hizmetler.html">Ek Ve Diğer Hizmetler</a></li>
+                            <li><a href="planlar.html">Planlar</a></li>
+                            <li><a href="toplanti-salonlari.html">Toplantı Salonları</a></li>
+                        </ul>
+      </div>
+      <div class="menu-column">
+        <h3 class="nav-toggle-button" data-translate="menu.visitBFM">BFM'yi Ziyaret Edin</h3>
+        <ul>
+          <li><a href="ulasim.html">Ulaşım</a></li>
+          <li><a href="konaklama.html">Konaklama</a></li>
+          <li><a href="restoran-ve-kafeler.html">Restoran ve Kafeler</a></li>
+          <li><a href="hizmetler.html">Hizmetler</a></li>
+        </ul>
+      </div>
+      <div class="menu-column">
+        <h3 class="nav-toggle-button">Etkinlikler</h3>
+        <ul>
+          <li><a href="#">B2B Toplantıları</a></li>
+        </ul>
+      </div>
+      <div class="menu-column">
+        <h3 class="nav-toggle-button">Bize Ulaşın</h3>
+        <ul>
+          <li><a href="iletisim.html">İletişim Bilgileri</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="menu-footer">
+      <!-- <span class="up-menu-f2f"> Powered By F2F Bilişim Reklam ve Danışmanlık Hizmetleri</span> -->
+      <span data-translate="menu.followUs">Bizi Takip Edin</span>
+      <div class="social-icons-menu">
+        <a href="https://www.facebook.com/lesexpofair" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://x.com/lesexpofair" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.instagram.com/lesexpofair/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@@lesexpofair" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.linkedin.com/company/yük-mühendisliği-birliği/" target="_blank"><i
+            class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="banner">
+
+  </div>
+
+  <div class="container mt-4">
     <!-- Fuar Başlık Bölümü -->
     <div class="row mb-4">
-        <div class="col-12">
-            <div class="organizer-info" data-translate="fuarSinglePage.main.organizerInfo">Bursa Fuar Merkezi </div>
-            <h1 class="fair-title" data-translate="fuarSinglePage.main.fairTitle">RISING CITY & YAPI VE YAŞAM FUARI 2025</h1>
-            
-            <div class="d-flex justify-content-end align-items-center mt-3">
-                <button class="btn btn-outline-danger rounded-circle me-2 share-btn">
-                    <i class="fas fa-share-alt"></i>
-                </button>
-                <button class="btn btn-danger takvim-ekle-btn" data-translate="fuarSinglePage.main.addToCalendar">
-                    <i class="far fa-calendar-plus me-2"></i>
-                    Takvime Ekle
-                </button>
-            </div>
+      <div class="col-12">
+        <div class="organizer-info" data-translate="fuarSinglePage.main.organizerInfo">Bursa Fuar Merkezi </div>
+        <h1 class="fair-title" data-translate="fuarSinglePage.main.fairTitle">RISING CITY & YAPI VE YAŞAM FUARI 2025
+        </h1>
+
+        <div class="d-flex justify-content-end align-items-center mt-3">
+          <button class="btn btn-outline-danger rounded-circle me-2 share-btn">
+            <i class="fas fa-share-alt"></i>
+          </button>
+          <button class="btn btn-danger takvim-ekle-btn" data-translate="fuarSinglePage.main.addToCalendar">
+            <i class="far fa-calendar-plus me-2"></i>
+            Takvime Ekle
+          </button>
         </div>
+      </div>
     </div>
 
     <div class="row">
-        <!-- Sol Kolon - Fuar Açıklaması ve Takvim -->
-        <div class="col-lg-8 mb-4">
-            <div class="fair-description mb-4">
-                <h2 data-translate="fuarSinglePage.description.title">Bursa'nın sesini duyuran Rising City & Yapı ve Yaşam Fuarı</h2>
-                <p data-translate="fuarSinglePage.description.p1">Bursa Ticaret ve Sanayi Odası öncülüğünde KFA Fuarcılık'ın profesyonel organizasyonu ile yılda bir kez düzenlenen Rising City &Yapı ve Yaşam Fuarı Bursa İnşaat, İnşaat Malzemeleri ve Teknolojileri Fuarı ve Rising City &Yapı ve Yaşam Fuarı Bursa Gayrimenkul Fuarı, İnşaat ve Gayrimenkul alanında faaliyet gösteren yerli üreticilere yeni pazarlar bulmak, iş fırsatları oluşturmak ve iş ortaklıkları sağlamayı hedefliyor.</p>
-                <p data-translate="fuarSinglePage.description.p2">Bursa Uluslararası Fuar Merkezi'nde 10 bin metrekarenin üzerinde alanda İnşaat ve Gayrimenkul alanında hizmetlerin sergilediği fuar, hem ziyaretçilere hem de katılımcılara teknoloji ve trendlerin ön planda olduğu iş odaklı bir deneyim sunuyor.</p>
-            </div>
+      <!-- Sol Kolon - Fuar Açıklaması ve Takvim -->
+      <div class="col-lg-8 mb-4">
+        <div class="fair-description mb-4">
+          <h2 data-translate="fuarSinglePage.description.title">Bursa'nın sesini duyuran Rising City & Yapı ve Yaşam
+            Fuarı</h2>
+          <p data-translate="fuarSinglePage.description.p1">Bursa Ticaret ve Sanayi Odası’nın öncülüğünde, KFA Fuarcılık
+            A.Ş. organizasyonuyla yılda bir kez düzenlenen Rising City & Yapı ve Yaşam Fuarı, iki tematik başlık altında
+            sektör profesyonellerini bir araya getiriyor: <br>
+          <ul>
+            <li class="fw-bold">• Bursa İnşaat, İnşaat Malzemeleri ve Teknolojileri Fuarı</li>
+            <li class="fw-bold">• Bursa Gayrimenkul Fuarı</li>
+          </ul>
+          </p>
+          <p data-translate="fuarSinglePage.description.p2">Fuar, inşaat ve gayrimenkul alanında faaliyet gösteren yerli
+            üreticilere yeni pazarlara açılma imkânı sunarken, katılımcılar için iş birlikleri kurma, satış hacmini
+            artırma ve sektörel görünürlük elde etme fırsatları yaratıyor.</p>
 
-            <!-- Fuar Takvimi Bölümü -->
-            <div class="fair-calendar mb-4">
-                <h2 class="calendar-title" data-translate="fuarSinglePage.calendar.title">Fuar Takvimi <span class="calendar-dates">24 Nisan 2025 — 27 Nisan 2025</span></h2>
-                
-                <div class="calendar-cards">
-                    <div class="row">
-                        <!-- Gün 1 -->
-                        <div class="col-md-4 col-sm-6 mb-3">
-                            <div class="calendar-card">
-                                <div class="card-header" data-translate="fuarSinglePage.calendar.dayThu">PER 24</div>
-                                <div class="card-body">
-                                    <p data-translate="fuarSinglePage.calendar.eventDesc">Bursa'nın sesini duyuran Rising City & Yapı ve Yaşam Fuarı</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Gün 2 -->
-                        <div class="col-md-4 col-sm-6 mb-3">
-                            <div class="calendar-card">
-                                <div class="card-header" data-translate="fuarSinglePage.calendar.dayFri">CUM 25</div>
-                                <div class="card-body">
-                                    <p data-translate="fuarSinglePage.calendar.eventDesc">Bursa'nın sesini duyuran Rising City & Yapı ve Yaşam Fuarı</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Gün 3 -->
-                        <div class="col-md-4 col-sm-6 mb-3">
-                            <div class="calendar-card">
-                                <div class="card-header" data-translate="fuarSinglePage.calendar.daySat">CMT 26</div>
-                                <div class="card-body">
-                                    <p data-translate="fuarSinglePage.calendar.eventDesc">Bursa'nın sesini duyuran Rising City & Yapı ve Yaşam Fuarı</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Gün 4 -->
-                        <div class="col-md-4 col-sm-6 mb-3">
-                            <div class="calendar-card">
-                                <div class="card-header" data-translate="fuarSinglePage.calendar.daySun">PAZ 27</div>
-                                <div class="card-body">
-                                    <p data-translate="fuarSinglePage.calendar.eventDesc">Bursa'nın sesini duyuran Rising City & Yapı ve Yaşam Fuarı</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Gün 5 -->
-                        <div class="col-md-4 col-sm-6 mb-3">
-                            <div class="calendar-card">
-                                <div class="card-header" data-translate="fuarSinglePage.calendar.dayMon">PZT 28</div>
-                                <div class="card-body">
-                                    <p data-translate="fuarSinglePage.calendar.noEvent">Etkinlik yok</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="salon-info">
-                    <span class="salon-label" data-translate="fuarSinglePage.calendar.hallLabel">Salon</span>
-                    <span class="salon-number">01</span>
-                </div>
-            </div>
+          <p>
+            <strong>Bursa Uluslararası Fuar Merkezi’nde </strong>10.000 m²’nin üzerinde alanda düzenlenen fuar;
+          <ul>
+            <li>• En son yapı teknolojilerini,</li>
+            <li>• Sektördeki güncel trendleri,</li>
+            <li>• Sürdürülebilir yapı çözümlerini,</li>
+            <li>• Ve yatırım olanaklarını
+              bir araya getirerek, hem ziyaretçilere hem de katılımcılara iş odaklı, yüksek verimli bir deneyim sunuyor.
+            </li>
+          </ul>
+          <br>
+          Rising City & Yapı ve Yaşam Fuarı, Bursa’nın üretim gücünü ve marka değerini hem ulusal hem de uluslararası platformlarda görünür kılmayı amaçlamaktadır.
+          </p>
         </div>
-        
-        <!-- Sağ Kolon - Fuar Künyesi -->
-        <div class="col-lg-4">
-            <div class="fair-info-panel">
-                <h3 data-translate="fuarSinglePage.infoPanel.title">Fuar Künyesi</h3>
-                
-                <div class="info-item">
-                    <div class="info-label" data-translate="fuarSinglePage.infoPanel.startDateLabel">Başlangıç Tarihi:</div>
-                    <div class="info-value">24.04.2025</div>
-                </div>
-                
-                <div class="info-item">
-                    <div class="info-label" data-translate="fuarSinglePage.infoPanel.endDateLabel">Bitiş Tarihi:</div>
-                    <div class="info-value">27.04.2025</div>
-                </div>
-                
-                <div class="info-item">
-                    <div class="info-label" data-translate="fuarSinglePage.infoPanel.hallLabel">Fuar Salonu:</div>
-                    <div class="info-value">1</div>
-                </div>
-                
-                <div class="info-item">
-                    <div class="info-label" data-translate="fuarSinglePage.infoPanel.subjectLabel">Fuar Konusu:</div>
-                    <div class="info-value" data-translate="fuarSinglePage.infoPanel.subjectValue">İnşaat ve Gayrimenkul</div>
-                </div>
-                
-                <div class="info-item">
-                    <div class="info-label" data-translate="fuarSinglePage.infoPanel.organizerLabel">Organizatör:</div>
-                    <div class="info-value" data-translate="fuarSinglePage.infoPanel.organizerValue">Bursa Fuar Merkezi</div>
-                </div>
 
-                <div class="info-item">
-                    <div class="info-label" data-translate="fuarSinglePage.infoPanel.visitorHoursLabel">Ziyaret Saatleri:</div>
-                    <div class="info-value">09:30-18:00</div>
+
+
+        <!-- Fuar Takvimi Bölümü -->
+        <div class="fair-calendar mb-4">
+          <h2 class="calendar-title" data-translate="fuarSinglePage.calendar.title">Fuar Takvimi <span
+              class="calendar-dates">24 Nisan 2025 — 27 Nisan 2025</span></h2>
+
+          <div class="calendar-cards">
+            <div class="row">
+              <!-- Gün 1 -->
+              <div class="col-md-4 col-sm-6 mb-3">
+                <div class="calendar-card">
+                  <div class="card-header" data-translate="fuarSinglePage.calendar.dayThu">PER 24</div>
+                  <div class="card-body">
+                    <p data-translate="fuarSinglePage.calendar.eventDesc">Bursa'nın sesini duyuran Rising City & Yapı ve
+                      Yaşam Fuarı</p>
+                  </div>
                 </div>
-                
-                <div class="info-item">
-                    <div class="info-label" data-translate="fuarSinglePage.infoPanel.locationLabel">Fuar Alanı:</div>
-                    <div class="info-value" data-translate="fuarSinglePage.infoPanel.locationValue">Bursa Uluslararası Fuar ve Kongre Merkezi</div>
+              </div>
+
+              <!-- Gün 2 -->
+              <div class="col-md-4 col-sm-6 mb-3">
+                <div class="calendar-card">
+                  <div class="card-header" data-translate="fuarSinglePage.calendar.dayFri">CUM 25</div>
+                  <div class="card-body">
+                    <p data-translate="fuarSinglePage.calendar.eventDesc">Bursa'nın sesini duyuran Rising City & Yapı ve
+                      Yaşam Fuarı</p>
+                  </div>
                 </div>
-                
-                <div class="info-item">
-                    <div class="info-label" data-translate="fuarSinglePage.infoPanel.websiteLabel">Web:</div>
-                    <div class="info-value"><a href="https://risingcity.com.tr" target="_blank">https://risingcity.com.tr</a></div>
+              </div>
+
+              <!-- Gün 3 -->
+              <div class="col-md-4 col-sm-6 mb-3">
+                <div class="calendar-card">
+                  <div class="card-header" data-translate="fuarSinglePage.calendar.daySat">CMT 26</div>
+                  <div class="card-body">
+                    <p data-translate="fuarSinglePage.calendar.eventDesc">Bursa'nın sesini duyuran Rising City & Yapı ve
+                      Yaşam Fuarı</p>
+                  </div>
                 </div>
+              </div>
+
+              <!-- Gün 4 -->
+              <div class="col-md-4 col-sm-6 mb-3">
+                <div class="calendar-card">
+                  <div class="card-header" data-translate="fuarSinglePage.calendar.daySun">PAZ 27</div>
+                  <div class="card-body">
+                    <p data-translate="fuarSinglePage.calendar.eventDesc">Bursa'nın sesini duyuran Rising City & Yapı ve
+                      Yaşam Fuarı</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Gün 5 -->
+              <div class="col-md-4 col-sm-6 mb-3">
+                <div class="calendar-card">
+                  <div class="card-header" data-translate="fuarSinglePage.calendar.dayMon">PZT 28</div>
+                  <div class="card-body">
+                    <p data-translate="fuarSinglePage.calendar.noEvent">Etkinlik yok</p>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+
+          <div class="salon-info">
+            <span class="salon-label" data-translate="fuarSinglePage.calendar.hallLabel">Salon</span>
+            <span class="salon-number">01</span>
+          </div>
         </div>
+      </div>
+
+      <!-- Sağ Kolon - Fuar Künyesi -->
+      <div class="col-lg-4">
+        <div class="fair-info-panel">
+          <h3 data-translate="fuarSinglePage.infoPanel.title">Fuar Künyesi</h3>
+
+          <div class="info-item">
+            <div class="info-label" data-translate="fuarSinglePage.infoPanel.startDateLabel">Başlangıç Tarihi:</div>
+            <div class="info-value">24.04.2025</div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-label" data-translate="fuarSinglePage.infoPanel.endDateLabel">Bitiş Tarihi:</div>
+            <div class="info-value">27.04.2025</div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-label" data-translate="fuarSinglePage.infoPanel.hallLabel">Fuar Salonu:</div>
+            <div class="info-value">1</div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-label" data-translate="fuarSinglePage.infoPanel.subjectLabel">Fuar Konusu:</div>
+            <div class="info-value" data-translate="fuarSinglePage.infoPanel.subjectValue">İnşaat ve Gayrimenkul</div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-label" data-translate="fuarSinglePage.infoPanel.organizerLabel">Organizatör:</div>
+            <div class="info-value" data-translate="fuarSinglePage.infoPanel.organizerValue">Bursa Fuar Merkezi</div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-label" data-translate="fuarSinglePage.infoPanel.visitorHoursLabel">Ziyaret Saatleri:</div>
+            <div class="info-value">09:30-18:00</div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-label" data-translate="fuarSinglePage.infoPanel.locationLabel">Fuar Alanı:</div>
+            <div class="info-value" data-translate="fuarSinglePage.infoPanel.locationValue">Bursa Uluslararası Fuar ve
+              Kongre Merkezi</div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-label" data-translate="fuarSinglePage.infoPanel.websiteLabel">Web:</div>
+            <div class="info-value"><a href="https://risingcity.com.tr" target="_blank">https://risingcity.com.tr</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
 
-   <!-- Footer Start -->
-   <footer class="bg-dark text-white pt-5  footer">
+  <!-- Footer Start -->
+  <footer class="bg-dark text-white pt-5  footer">
 
     <div class="container text-md-left">
 
@@ -387,23 +423,12 @@
         </div>
 
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 ">
-          <h5 class="text-uppercase mb-4 font-weight-bold " data-translate="footer.bfmAgenda">BFM Gündem</h5>
-          <p>
-            <a href="tum-haberler.html" class="text-white" style="text-decoration: none;"
-              data-translate="footer.fairAnnouncements">Fuar Duyuruları</a>
-          </p>
-
-          <p>
-            <a href="tum-haberler.html" class="text-white" style="text-decoration: none;"
-              data-translate="footer.newsFromBFM">BFM'den Haberler</a>
-          </p>
-
-          <p>
-            <a href="tum-haberler.html" class="text-white" style="text-decoration: none;"
-              data-translate="footer.fairNews">Fuar Haberleri</a>
-          </p>
-
-        </div>
+                    <h5 class="text-uppercase mb-4 font-weight-bold " data-translate="footer.bfmAgenda">BFM Gündem</h5>
+                    <p>
+                        <a href="tum-haberler.html" class="text-white" style="text-decoration: none;"
+                            data-translate="footer.fairAnnouncements">Haberler</a>
+                    </p>
+                </div>
 
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 ">
           <h5 class="text-uppercase mb-4 font-weight-bold" data-translate="footer.contactUs">Bize Ulaşın</h5>
@@ -490,284 +515,284 @@
       <br> <br> <br>
     </div>
   </footer>
-<!-- Terms & Conditions Modal -->
-<div class="modal-overlay" id="termsModal">
-  <div class="modal-container">
-    <div class="modal-header">
-      <h3 class="modal-title">Kullanıcı Sözleşmesi</h3>
-      <button class="close-button" id="closeTermsModal">&times;</button>
-    </div>
-    <div class="modal-content">
-      <div class="terms-content">
-        <h3>GİZLİLİK POLİTİKASI VE WEB SİTESİ KULLANIM ŞARTLARI</h3>
-        <p>Lütfen bu web sitesini kullanmadan önce aşağıdaki maddeleri dikkatlice okuyunuz ve inceleyiniz.</p>
-        <p>https://www.bfm.com alan adına sahip web sitesi ("Site" veya "Web Sitesi") KFA Fuarcılık A.Ş'ye
-          ("KFA") aittir.</p>
-        <p>Bu Web Sitesini kullanarak, aşağıdaki Kullanıcı Sözleşmesini kabul etmiş olursunuz.</p>
+  <!-- Terms & Conditions Modal -->
+  <div class="modal-overlay" id="termsModal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 class="modal-title">Kullanıcı Sözleşmesi</h3>
+        <button class="close-button" id="closeTermsModal">&times;</button>
+      </div>
+      <div class="modal-content">
+        <div class="terms-content">
+          <h3>GİZLİLİK POLİTİKASI VE WEB SİTESİ KULLANIM ŞARTLARI</h3>
+          <p>Lütfen bu web sitesini kullanmadan önce aşağıdaki maddeleri dikkatlice okuyunuz ve inceleyiniz.</p>
+          <p>https://www.bfm.com alan adına sahip web sitesi ("Site" veya "Web Sitesi") KFA Fuarcılık A.Ş'ye
+            ("KFA") aittir.</p>
+          <p>Bu Web Sitesini kullanarak, aşağıdaki Kullanıcı Sözleşmesini kabul etmiş olursunuz.</p>
 
-        <h3>1- Kabul</h3>
-        <p>Bu Siteyi ziyaret ederek, bu Gizlilik Politikası ve Kullanım Şartlarında ("Sözleşme") belirtilen şartlar
-          kapsamında hareket etmeyi ve bu koşullara uymayı kabul edersiniz.</p>
-        <p>KFA, bu web sitesindeki Gizlilik Politikası dahil olmak üzere bu koşulları ve diğer bilgileri gerekli
-          gördüğünde zaman zaman ve herhangi bir bildirimde bulunmaksızın değiştirme hakkını saklı tutar. Bu
-          Sözleşmenin ve Gizlilik Politikasının güncel versiyonuna her zaman web sitesinden erişebilirsiniz. Bu Web
-          Sitesine girmekle, bu Sözleşmeyi ve Sözleşmede herhangi bir zamanda meydana gelebilecek değişiklikleri kabul
-          etmiş olursunuz. Web Sitesi üzerindeki tüm kullanım ve tasarruf hakları KFA'ya aittir.</p>
+          <h3>1- Kabul</h3>
+          <p>Bu Siteyi ziyaret ederek, bu Gizlilik Politikası ve Kullanım Şartlarında ("Sözleşme") belirtilen şartlar
+            kapsamında hareket etmeyi ve bu koşullara uymayı kabul edersiniz.</p>
+          <p>KFA, bu web sitesindeki Gizlilik Politikası dahil olmak üzere bu koşulları ve diğer bilgileri gerekli
+            gördüğünde zaman zaman ve herhangi bir bildirimde bulunmaksızın değiştirme hakkını saklı tutar. Bu
+            Sözleşmenin ve Gizlilik Politikasının güncel versiyonuna her zaman web sitesinden erişebilirsiniz. Bu Web
+            Sitesine girmekle, bu Sözleşmeyi ve Sözleşmede herhangi bir zamanda meydana gelebilecek değişiklikleri kabul
+            etmiş olursunuz. Web Sitesi üzerindeki tüm kullanım ve tasarruf hakları KFA'ya aittir.</p>
 
-        <h3>2- Sorumluluk</h3>
-        <p>KFA, fiyatlar, düzenlenen fuarlar ve sunulan hizmetlerde değişiklik yapma hakkını her zaman saklı tutar.
-          Web sitesinin kullanımında kaynak kodunu bulmaya veya elde etmeye yönelik başka bir işlem yapmayacağınızı,
-          aksi takdirde üçüncü kişilere gelebilecek zararlardan sorumlu olacağınızı ve hakkınızda yasal ve cezai işlem
-          başlatılacağını önceden kabul edersiniz.</p>
+          <h3>2- Sorumluluk</h3>
+          <p>KFA, fiyatlar, düzenlenen fuarlar ve sunulan hizmetlerde değişiklik yapma hakkını her zaman saklı tutar.
+            Web sitesinin kullanımında kaynak kodunu bulmaya veya elde etmeye yönelik başka bir işlem yapmayacağınızı,
+            aksi takdirde üçüncü kişilere gelebilecek zararlardan sorumlu olacağınızı ve hakkınızda yasal ve cezai işlem
+            başlatılacağını önceden kabul edersiniz.</p>
 
-        <h3>3- Yayınlanan Bilgilere Güvenme</h3>
-        <p>Web Sitesindeki bilgiler sadece genel bilgi amaçlıdır ve bu bilgilerin doğruluğu garanti edilmez. Web
-          Sitesinden elde edilen bilgilere güvenmekten doğan tüm sorumluluk size aittir.</p>
+          <h3>3- Yayınlanan Bilgilere Güvenme</h3>
+          <p>Web Sitesindeki bilgiler sadece genel bilgi amaçlıdır ve bu bilgilerin doğruluğu garanti edilmez. Web
+            Sitesinden elde edilen bilgilere güvenmekten doğan tüm sorumluluk size aittir.</p>
 
-        <h3>4- Kişisel Veriler</h3>
-        <p>Web sitesine sağladığınız kişisel bilgilerin işlenmesi, kaydedilmesi ve korunması hakkında bilgi edinmek
-          için lütfen KVKK formlarımızı okuyunuz.</p>
+          <h3>4- Kişisel Veriler</h3>
+          <p>Web sitesine sağladığınız kişisel bilgilerin işlenmesi, kaydedilmesi ve korunması hakkında bilgi edinmek
+            için lütfen KVKK formlarımızı okuyunuz.</p>
 
-        <h3>5- Kişisel Olmayan Bilgiler</h3>
-        <p>Kişisel olmayan bilgiler, sizi kişisel olarak tanımlayamayan bilgilerdir. Örneğin; kullanım saatleri,
-          Sitenin kullanıldığı konum, görüntülenen sayfalar vb.</p>
+          <h3>5- Kişisel Olmayan Bilgiler</h3>
+          <p>Kişisel olmayan bilgiler, sizi kişisel olarak tanımlayamayan bilgilerdir. Örneğin; kullanım saatleri,
+            Sitenin kullanıldığı konum, görüntülenen sayfalar vb.</p>
 
-        <h3>6- Çerez Kullanımı</h3>
-        <p>Çerezler, Siteyi ziyaret ettiğinizde tercihlerinizi bilgisayarınıza kaydeden küçük metin dosyalarıdır.
-          Çerezler, alışveriş sepetinizde hangi ürünlerin olduğunu hatırlama, web sitesine ve/veya mobil uygulamaya
-          tekrar giriş yaptığınızda sizi tanıma ve en çok ziyaret ettiğiniz sayfalarda ilginizi çekebilecek reklam ve
-          duyuruları yayınlama gibi işlemlerde size en kaliteli hizmeti sunmak için kullanılır.</p>
+          <h3>6- Çerez Kullanımı</h3>
+          <p>Çerezler, Siteyi ziyaret ettiğinizde tercihlerinizi bilgisayarınıza kaydeden küçük metin dosyalarıdır.
+            Çerezler, alışveriş sepetinizde hangi ürünlerin olduğunu hatırlama, web sitesine ve/veya mobil uygulamaya
+            tekrar giriş yaptığınızda sizi tanıma ve en çok ziyaret ettiğiniz sayfalarda ilginizi çekebilecek reklam ve
+            duyuruları yayınlama gibi işlemlerde size en kaliteli hizmeti sunmak için kullanılır.</p>
 
-        <h3>7- Ödeme Güvenliği</h3>
-        <p>Toplanan finansal bilgiler, satın aldığınız ürünleri fatura etmek için kullanılır. Web sitesinde veya mobil
-          uygulamada çevrimiçi ödeme satın alımı yaptığınızda, finansal bilgilerinizin işleminizi gerçekleştirmek için
-          gerekli üçüncü taraflara (bankalar, kredi kartı şirketleri vb.) verileceğini kabul edersiniz.</p>
+          <h3>7- Ödeme Güvenliği</h3>
+          <p>Toplanan finansal bilgiler, satın aldığınız ürünleri fatura etmek için kullanılır. Web sitesinde veya mobil
+            uygulamada çevrimiçi ödeme satın alımı yaptığınızda, finansal bilgilerinizin işleminizi gerçekleştirmek için
+            gerekli üçüncü taraflara (bankalar, kredi kartı şirketleri vb.) verileceğini kabul edersiniz.</p>
 
-        <h3>8- Diğer Web Sitelerine Bağlantılar</h3>
-        <p>Bu web sitesinden üçüncü taraflara ait diğer web sitelerine bağlantılar sağlanabilir. KFA, bağlantı verilen
-          web sitelerindeki içerikten sorumlu değildir.</p>
+          <h3>8- Diğer Web Sitelerine Bağlantılar</h3>
+          <p>Bu web sitesinden üçüncü taraflara ait diğer web sitelerine bağlantılar sağlanabilir. KFA, bağlantı verilen
+            web sitelerindeki içerikten sorumlu değildir.</p>
 
-        <h3>9- Fikri Mülkiyet Hakları</h3>
-        <p>Bu web sitesi ve tüm sayfaları, bu internet uygulama yazılımı ve içerdiği tüm görsel çalışmalar,
-          tasarımlar, arayüzler, kullanıcı kontrolleri, süreçler, programlar ve yazılım bileşenleri ve bunlarla
-          sınırlı olmayan tüm haklar münhasıran KFA'ya, lisans verenlere veya diğer sağlayıcılara aittir.</p>
+          <h3>9- Fikri Mülkiyet Hakları</h3>
+          <p>Bu web sitesi ve tüm sayfaları, bu internet uygulama yazılımı ve içerdiği tüm görsel çalışmalar,
+            tasarımlar, arayüzler, kullanıcı kontrolleri, süreçler, programlar ve yazılım bileşenleri ve bunlarla
+            sınırlı olmayan tüm haklar münhasıran KFA'ya, lisans verenlere veya diğer sağlayıcılara aittir.</p>
 
-        <h3>10- Zarar Tazmini</h3>
-        <p>Bu hükümleri ihlal etmenizden veya Web Sitesinin yanlış kullanımından kaynaklanan herhangi bir talep,
-          yükümlülük, zarar, karar, hüküm, kayıp, gider veya ücretten (avukat ücretleri dahil) KFA'yı, bağlı
-          kuruluşlarını, lisans verenlerini ve bunların çalışanlarını, yöneticilerini, temsilcilerini, tedarikçilerini
-          ve haleflerini tazmin etmeyi ve zararları karşılamayı kabul edersiniz.</p>
+          <h3>10- Zarar Tazmini</h3>
+          <p>Bu hükümleri ihlal etmenizden veya Web Sitesinin yanlış kullanımından kaynaklanan herhangi bir talep,
+            yükümlülük, zarar, karar, hüküm, kayıp, gider veya ücretten (avukat ücretleri dahil) KFA'yı, bağlı
+            kuruluşlarını, lisans verenlerini ve bunların çalışanlarını, yöneticilerini, temsilcilerini, tedarikçilerini
+            ve haleflerini tazmin etmeyi ve zararları karşılamayı kabul edersiniz.</p>
 
-        <h3>11- İletişim Bilgileri</h3>
-        <p>Sorularınız için info@kfa.com.tr e-posta adresini kullanın.</p>
+          <h3>11- İletişim Bilgileri</h3>
+          <p>Sorularınız için info@kfa.com.tr e-posta adresini kullanın.</p>
 
-        <h3>12- Uygulanacak Hukuk ve Uyuşmazlıkların Çözümü</h3>
-        <p>Bu Sözleşmeye herhangi bir çelişki olmaksızın Türk hukuku uygulanacak olup, uyuşmazlığın karşılıklı
-          görüşmeler yoluyla çözülemediği durumlarda ilgili uyuşmazlık Bursa Mahkemeleri ve İcra Daireleri önünde
-          çözümlenecektir.</p>
+          <h3>12- Uygulanacak Hukuk ve Uyuşmazlıkların Çözümü</h3>
+          <p>Bu Sözleşmeye herhangi bir çelişki olmaksızın Türk hukuku uygulanacak olup, uyuşmazlığın karşılıklı
+            görüşmeler yoluyla çözülemediği durumlarda ilgili uyuşmazlık Bursa Mahkemeleri ve İcra Daireleri önünde
+            çözümlenecektir.</p>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<!-- Privacy Policy Modal -->
-<div class="modal-overlay" id="privacyModal">
-  <div class="modal-container">
-    <div class="modal-header">
-      <h3 class="modal-title">GİZLİLİK POLİTİKASI VE İNTERNET SİTESİ KULLANIM KOŞULLARI</h3>
-      <button class="close-button" id="closePrivacyModal">&times;</button>
-    </div>
-    <div class="modal-content">
-      <div class="privacy-content">
-        <h3>GİZLİLİK POLİTİKASI VE WEB SİTESİ KULLANIM ŞARTLARI</h3>
-        <p>Lütfen bu web sitesini kullanmadan önce aşağıdaki maddeleri dikkatlice okuyunuz ve inceleyiniz.</p>
-        <p>https://www.bfm.com alan adına sahip web sitesi ("Site" veya "Web Sitesi") KFA Fuarcılık A.Ş'ye
-          ("KFA") aittir.</p>
-        <p>Bu Web Sitesini kullanarak, aşağıdaki Kullanıcı Sözleşmesini kabul etmiş olursunuz.</p>
+  <!-- Privacy Policy Modal -->
+  <div class="modal-overlay" id="privacyModal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 class="modal-title">GİZLİLİK POLİTİKASI VE İNTERNET SİTESİ KULLANIM KOŞULLARI</h3>
+        <button class="close-button" id="closePrivacyModal">&times;</button>
+      </div>
+      <div class="modal-content">
+        <div class="privacy-content">
+          <h3>GİZLİLİK POLİTİKASI VE WEB SİTESİ KULLANIM ŞARTLARI</h3>
+          <p>Lütfen bu web sitesini kullanmadan önce aşağıdaki maddeleri dikkatlice okuyunuz ve inceleyiniz.</p>
+          <p>https://www.bfm.com alan adına sahip web sitesi ("Site" veya "Web Sitesi") KFA Fuarcılık A.Ş'ye
+            ("KFA") aittir.</p>
+          <p>Bu Web Sitesini kullanarak, aşağıdaki Kullanıcı Sözleşmesini kabul etmiş olursunuz.</p>
 
-        <h3>1- Kabul</h3>
-        <p>Bu Siteyi ziyaret ederek, bu Gizlilik Politikası ve Kullanım Şartlarında ("Sözleşme") belirtilen şartlar
-          kapsamında hareket etmeyi ve bu koşullara uymayı kabul edersiniz.</p>
-        <p>KFA, bu web sitesindeki Gizlilik Politikası dahil olmak üzere bu koşulları ve diğer bilgileri gerekli
-          gördüğünde zaman zaman ve herhangi bir bildirimde bulunmaksızın değiştirme hakkını saklı tutar. Bu
-          Sözleşmenin ve Gizlilik Politikasının güncel versiyonuna her zaman web sitesinden erişebilirsiniz. Bu Web
-          Sitesine girmekle, bu Sözleşmeyi ve Sözleşmede herhangi bir zamanda meydana gelebilecek değişiklikleri kabul
-          etmiş olursunuz. Web Sitesi üzerindeki tüm kullanım ve tasarruf hakları KFA'ya aittir.</p>
+          <h3>1- Kabul</h3>
+          <p>Bu Siteyi ziyaret ederek, bu Gizlilik Politikası ve Kullanım Şartlarında ("Sözleşme") belirtilen şartlar
+            kapsamında hareket etmeyi ve bu koşullara uymayı kabul edersiniz.</p>
+          <p>KFA, bu web sitesindeki Gizlilik Politikası dahil olmak üzere bu koşulları ve diğer bilgileri gerekli
+            gördüğünde zaman zaman ve herhangi bir bildirimde bulunmaksızın değiştirme hakkını saklı tutar. Bu
+            Sözleşmenin ve Gizlilik Politikasının güncel versiyonuna her zaman web sitesinden erişebilirsiniz. Bu Web
+            Sitesine girmekle, bu Sözleşmeyi ve Sözleşmede herhangi bir zamanda meydana gelebilecek değişiklikleri kabul
+            etmiş olursunuz. Web Sitesi üzerindeki tüm kullanım ve tasarruf hakları KFA'ya aittir.</p>
 
-        <h3>2- Sorumluluk</h3>
-        <p>KFA, fiyatlar, düzenlenen fuarlar ve sunulan hizmetlerde değişiklik yapma hakkını her zaman saklı tutar.
-          Web sitesinin kullanımında kaynak kodunu bulmaya veya elde etmeye yönelik başka bir işlem yapmayacağınızı,
-          aksi takdirde üçüncü kişilere gelebilecek zararlardan sorumlu olacağınızı ve hakkınızda yasal ve cezai işlem
-          başlatılacağını önceden kabul edersiniz.</p>
+          <h3>2- Sorumluluk</h3>
+          <p>KFA, fiyatlar, düzenlenen fuarlar ve sunulan hizmetlerde değişiklik yapma hakkını her zaman saklı tutar.
+            Web sitesinin kullanımında kaynak kodunu bulmaya veya elde etmeye yönelik başka bir işlem yapmayacağınızı,
+            aksi takdirde üçüncü kişilere gelebilecek zararlardan sorumlu olacağınızı ve hakkınızda yasal ve cezai işlem
+            başlatılacağını önceden kabul edersiniz.</p>
 
-        <h3>3- Yayınlanan Bilgilere Güvenme</h3>
-        <p>Web Sitesindeki bilgiler sadece genel bilgi amaçlıdır ve bu bilgilerin doğruluğu garanti edilmez. Web
-          Sitesinden elde edilen bilgilere güvenmekten doğan tüm sorumluluk size aittir.</p>
+          <h3>3- Yayınlanan Bilgilere Güvenme</h3>
+          <p>Web Sitesindeki bilgiler sadece genel bilgi amaçlıdır ve bu bilgilerin doğruluğu garanti edilmez. Web
+            Sitesinden elde edilen bilgilere güvenmekten doğan tüm sorumluluk size aittir.</p>
 
-        <h3>4- Kişisel Veriler</h3>
-        <p>Web sitesine sağladığınız kişisel bilgilerin işlenmesi, kaydedilmesi ve korunması hakkında bilgi edinmek
-          için lütfen KVKK formlarımızı okuyunuz.</p>
+          <h3>4- Kişisel Veriler</h3>
+          <p>Web sitesine sağladığınız kişisel bilgilerin işlenmesi, kaydedilmesi ve korunması hakkında bilgi edinmek
+            için lütfen KVKK formlarımızı okuyunuz.</p>
 
-        <h3>5- Kişisel Olmayan Bilgiler</h3>
-        <p>Kişisel olmayan bilgiler, sizi kişisel olarak tanımlayamayan bilgilerdir. Örneğin; kullanım saatleri,
-          Sitenin kullanıldığı konum, görüntülenen sayfalar vb.</p>
+          <h3>5- Kişisel Olmayan Bilgiler</h3>
+          <p>Kişisel olmayan bilgiler, sizi kişisel olarak tanımlayamayan bilgilerdir. Örneğin; kullanım saatleri,
+            Sitenin kullanıldığı konum, görüntülenen sayfalar vb.</p>
 
-        <h3>6- Çerez Kullanımı</h3>
-        <p>Çerezler, Siteyi ziyaret ettiğinizde tercihlerinizi bilgisayarınıza kaydeden küçük metin dosyalarıdır.
-          Çerezler, alışveriş sepetinizde hangi ürünlerin olduğunu hatırlama, web sitesine ve/veya mobil uygulamaya
-          tekrar giriş yaptığınızda sizi tanıma ve en çok ziyaret ettiğiniz sayfalarda ilginizi çekebilecek reklam ve
-          duyuruları yayınlama gibi işlemlerde size en kaliteli hizmeti sunmak için kullanılır.</p>
+          <h3>6- Çerez Kullanımı</h3>
+          <p>Çerezler, Siteyi ziyaret ettiğinizde tercihlerinizi bilgisayarınıza kaydeden küçük metin dosyalarıdır.
+            Çerezler, alışveriş sepetinizde hangi ürünlerin olduğunu hatırlama, web sitesine ve/veya mobil uygulamaya
+            tekrar giriş yaptığınızda sizi tanıma ve en çok ziyaret ettiğiniz sayfalarda ilginizi çekebilecek reklam ve
+            duyuruları yayınlama gibi işlemlerde size en kaliteli hizmeti sunmak için kullanılır.</p>
 
-        <h3>7- Ödeme Güvenliği</h3>
-        <p>Toplanan finansal bilgiler, satın aldığınız ürünleri fatura etmek için kullanılır. Web sitesinde veya mobil
-          uygulamada çevrimiçi ödeme satın alımı yaptığınızda, finansal bilgilerinizin işleminizi gerçekleştirmek için
-          gerekli üçüncü taraflara (bankalar, kredi kartı şirketleri vb.) verileceğini kabul edersiniz.</p>
+          <h3>7- Ödeme Güvenliği</h3>
+          <p>Toplanan finansal bilgiler, satın aldığınız ürünleri fatura etmek için kullanılır. Web sitesinde veya mobil
+            uygulamada çevrimiçi ödeme satın alımı yaptığınızda, finansal bilgilerinizin işleminizi gerçekleştirmek için
+            gerekli üçüncü taraflara (bankalar, kredi kartı şirketleri vb.) verileceğini kabul edersiniz.</p>
 
-        <h3>8- Diğer Web Sitelerine Bağlantılar</h3>
-        <p>Bu web sitesinden üçüncü taraflara ait diğer web sitelerine bağlantılar sağlanabilir. KFA, bağlantı verilen
-          web sitelerindeki içerikten sorumlu değildir.</p>
+          <h3>8- Diğer Web Sitelerine Bağlantılar</h3>
+          <p>Bu web sitesinden üçüncü taraflara ait diğer web sitelerine bağlantılar sağlanabilir. KFA, bağlantı verilen
+            web sitelerindeki içerikten sorumlu değildir.</p>
 
-        <h3>9- Fikri Mülkiyet Hakları</h3>
-        <p>Bu web sitesi ve tüm sayfaları, bu internet uygulama yazılımı ve içerdiği tüm görsel çalışmalar,
-          tasarımlar, arayüzler, kullanıcı kontrolleri, süreçler, programlar ve yazılım bileşenleri ve bunlarla
-          sınırlı olmayan tüm haklar münhasıran KFA'ya, lisans verenlere veya diğer sağlayıcılara aittir.</p>
+          <h3>9- Fikri Mülkiyet Hakları</h3>
+          <p>Bu web sitesi ve tüm sayfaları, bu internet uygulama yazılımı ve içerdiği tüm görsel çalışmalar,
+            tasarımlar, arayüzler, kullanıcı kontrolleri, süreçler, programlar ve yazılım bileşenleri ve bunlarla
+            sınırlı olmayan tüm haklar münhasıran KFA'ya, lisans verenlere veya diğer sağlayıcılara aittir.</p>
 
-        <h3>10- Zarar Tazmini</h3>
-        <p>Bu hükümleri ihlal etmenizden veya Web Sitesinin yanlış kullanımından kaynaklanan herhangi bir talep,
-          yükümlülük, zarar, karar, hüküm, kayıp, gider veya ücretten (avukat ücretleri dahil) KFA'yı, bağlı
-          kuruluşlarını, lisans verenlerini ve bunların çalışanlarını, yöneticilerini, temsilcilerini, tedarikçilerini
-          ve haleflerini tazmin etmeyi ve zararları karşılamayı kabul edersiniz.</p>
+          <h3>10- Zarar Tazmini</h3>
+          <p>Bu hükümleri ihlal etmenizden veya Web Sitesinin yanlış kullanımından kaynaklanan herhangi bir talep,
+            yükümlülük, zarar, karar, hüküm, kayıp, gider veya ücretten (avukat ücretleri dahil) KFA'yı, bağlı
+            kuruluşlarını, lisans verenlerini ve bunların çalışanlarını, yöneticilerini, temsilcilerini, tedarikçilerini
+            ve haleflerini tazmin etmeyi ve zararları karşılamayı kabul edersiniz.</p>
 
-        <h3>11- İletişim Bilgileri</h3>
-        <p>Sorularınız için info@kfa.com.tr e-posta adresini kullanın.</p>
+          <h3>11- İletişim Bilgileri</h3>
+          <p>Sorularınız için info@kfa.com.tr e-posta adresini kullanın.</p>
 
-        <h3>12- Uygulanacak Hukuk ve Uyuşmazlıkların Çözümü</h3>
-        <p>Bu Sözleşmeye herhangi bir çelişki olmaksızın Türk hukuku uygulanacak olup, uyuşmazlığın karşılıklı
-          görüşmeler yoluyla çözülemediği durumlarda ilgili uyuşmazlık Bursa Mahkemeleri ve İcra Daireleri önünde
-          çözümlenecektir.</p>
+          <h3>12- Uygulanacak Hukuk ve Uyuşmazlıkların Çözümü</h3>
+          <p>Bu Sözleşmeye herhangi bir çelişki olmaksızın Türk hukuku uygulanacak olup, uyuşmazlığın karşılıklı
+            görüşmeler yoluyla çözülemediği durumlarda ilgili uyuşmazlık Bursa Mahkemeleri ve İcra Daireleri önünde
+            çözümlenecektir.</p>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<!-- KVKK Modal -->
-<div class="modal-overlay" id="kvkkModal">
-  <div class="modal-container">
-    <div class="modal-header">
-      <h3 class="modal-title">6698 SAYILI KİŞİSEL VERİLERİN KORUNMASI KANUNU GEREĞİNCE BİLGİLENDİRME</h3>
-      <button class="close-button" id="closeKvkkModal">&times;</button>
-    </div>
-    <div class="modal-content">
-      <div class="kvkk-content">
-        <h3>6698 SAYILI KİŞİSEL VERİLERİN KORUNMASI KANUNU GEREĞİNCE BİLGİLENDİRME</h3>
-        <p><strong>Veri sorumlusunun ve varsa temsilcisinin kimliği;</strong><br>
-          Bu bilgilendirme, 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") kapsamında, Veri
-          Sorumlusu sıfatıyla, "KFA Fuarcılık A.Ş" (Mersis No:0548143315700001)'nin iş ortaklarına,
-          müşterilerine, fuar ziyaretçilerine, iletişimde bulunduğu gerçek ya da tüzel kişilere aydınlatma
-          yükümlülüğünü yerine getirmek üzere yapılmaktadır.</p>
+  <!-- KVKK Modal -->
+  <div class="modal-overlay" id="kvkkModal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 class="modal-title">6698 SAYILI KİŞİSEL VERİLERİN KORUNMASI KANUNU GEREĞİNCE BİLGİLENDİRME</h3>
+        <button class="close-button" id="closeKvkkModal">&times;</button>
+      </div>
+      <div class="modal-content">
+        <div class="kvkk-content">
+          <h3>6698 SAYILI KİŞİSEL VERİLERİN KORUNMASI KANUNU GEREĞİNCE BİLGİLENDİRME</h3>
+          <p><strong>Veri sorumlusunun ve varsa temsilcisinin kimliği;</strong><br>
+            Bu bilgilendirme, 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") kapsamında, Veri
+            Sorumlusu sıfatıyla, "KFA Fuarcılık A.Ş" (Mersis No:0548143315700001)'nin iş ortaklarına,
+            müşterilerine, fuar ziyaretçilerine, iletişimde bulunduğu gerçek ya da tüzel kişilere aydınlatma
+            yükümlülüğünü yerine getirmek üzere yapılmaktadır.</p>
 
-        <p><strong>Kişisel verilerin hangi amaçla işleneceği;</strong><br>
-          Kişisel verileriniz aşağıdaki durum ve koşullarda veri sorumlusu ya da atayacağı tüzel/gerçek kişiler
-          tarafından işlenebilmektedir;</p>
-        <ul>
-          <li>Ürün ve hizmetlerimizi iyileştirmek, geliştirmek, çeşitlendirmek ve ticari ilişki içerisinde
-            olduğumuz tüzel/gerçek kişilere sunabilmek ya da bilgi vermek amacıyla,</li>
-          <li>Fuarlarımızda ürün ve hizmetlerini sergileyen katılımcılarımız ile bu ürün ve hizmetleri
-            görmeye gelen ziyaretçilerimizin, bu organizasyonlardan sağlayacağı faydayı ve niteliği
-            arttırmak amacıyla,</li>
-          <li>Fuar kapsamlarının katılımcı, ziyaretçi beklentilerine uygun şekilde planlanması, etkinliğinin
-            izlenmesi ve sürekliliğinin sağlanması amacıyla,</li>
-          <li>Fuarların katılımcı, ziyaretçi, basın, ilgili sivil toplum kuruluşları ve ilgili kamu kurum ve
-            kuruluşlarınca bilinirliğinin arttırılması, aralarında iş ortaklıklarının oluşturulması ve ticari ya da
-            sosyal faaliyetlerinin zenginleştirilmesi amacıyla,</li>
-          <li>Geliştirilen yeni ürün ve hizmetlerin değerlendirilmesi ve şirketimizin ticari ya da iş
-            stratejilerinin belirlenmesi ve uygulanması amacıyla,</li>
-          <li>Çalışanlarımızın verilerini, performans düzeyini ve çalışan memnuniyetini arttırmak, eğitim ve
-            kariyer planlarının belirlenmesi veya iş güvenliğinin sağlanması amacıyla,</li>
-          <li>Bunlarla birlikte gerekli kalite ve standart denetimlerimizi yapabilmek ya da kanun ve
-            yönetmelikler ile belirlenmiş raporlama ve sair yükümlülüklerimizin yerine getirilmesi gibi
-            amaçlar için,</li>
-          <li>Ayrıca, düzenleyici ve denetleyici kurumlarla, yasal düzenlemelerin gerektirdiği veya zorunlu
-            kıldığı şekilde, KVKK'da belirtilmiş yasal yükümlülüklerin yerine getirilmesini sağlamak üzere
-            belirlenmiş gereklilik ve zorunluluklar kapsamında.</li>
-        </ul>
+          <p><strong>Kişisel verilerin hangi amaçla işleneceği;</strong><br>
+            Kişisel verileriniz aşağıdaki durum ve koşullarda veri sorumlusu ya da atayacağı tüzel/gerçek kişiler
+            tarafından işlenebilmektedir;</p>
+          <ul>
+            <li>Ürün ve hizmetlerimizi iyileştirmek, geliştirmek, çeşitlendirmek ve ticari ilişki içerisinde
+              olduğumuz tüzel/gerçek kişilere sunabilmek ya da bilgi vermek amacıyla,</li>
+            <li>Fuarlarımızda ürün ve hizmetlerini sergileyen katılımcılarımız ile bu ürün ve hizmetleri
+              görmeye gelen ziyaretçilerimizin, bu organizasyonlardan sağlayacağı faydayı ve niteliği
+              arttırmak amacıyla,</li>
+            <li>Fuar kapsamlarının katılımcı, ziyaretçi beklentilerine uygun şekilde planlanması, etkinliğinin
+              izlenmesi ve sürekliliğinin sağlanması amacıyla,</li>
+            <li>Fuarların katılımcı, ziyaretçi, basın, ilgili sivil toplum kuruluşları ve ilgili kamu kurum ve
+              kuruluşlarınca bilinirliğinin arttırılması, aralarında iş ortaklıklarının oluşturulması ve ticari ya da
+              sosyal faaliyetlerinin zenginleştirilmesi amacıyla,</li>
+            <li>Geliştirilen yeni ürün ve hizmetlerin değerlendirilmesi ve şirketimizin ticari ya da iş
+              stratejilerinin belirlenmesi ve uygulanması amacıyla,</li>
+            <li>Çalışanlarımızın verilerini, performans düzeyini ve çalışan memnuniyetini arttırmak, eğitim ve
+              kariyer planlarının belirlenmesi veya iş güvenliğinin sağlanması amacıyla,</li>
+            <li>Bunlarla birlikte gerekli kalite ve standart denetimlerimizi yapabilmek ya da kanun ve
+              yönetmelikler ile belirlenmiş raporlama ve sair yükümlülüklerimizin yerine getirilmesi gibi
+              amaçlar için,</li>
+            <li>Ayrıca, düzenleyici ve denetleyici kurumlarla, yasal düzenlemelerin gerektirdiği veya zorunlu
+              kıldığı şekilde, KVKK'da belirtilmiş yasal yükümlülüklerin yerine getirilmesini sağlamak üzere
+              belirlenmiş gereklilik ve zorunluluklar kapsamında.</li>
+          </ul>
 
-        <p><strong>İşlenen kişisel verilerin kimlere ve hangi amaçla aktarılabileceği,</strong><br>
-          İşlenen kişisel verileriniz yukarıdaki amaçlar ve KVKK'nın belirlediği koşullar içerisinde;</p>
-        <ul>
-          <li>Ticari faaliyetlerin yerine getirilebilmesi ve sürekliliğinin sağlanabilmesi amacıyla, şirketimiz iş
-            ortaklıklarına ya da iştiraklerimize,</li>
-          <li>Dış kaynaklı ürün ve hizmetlerin sağlanabilmesi amacıyla sınırlı olarak tedarikçilerimize,</li>
-          <li>İlgili mevzuat hükümlerine göre ticari faaliyetlerimizin denetimi amacıyla ilgili sözleşmeler
-            kapsamında denetim firmalarına,</li>
-          <li>Şirketimizin ticari faaliyetlerine ilişkin stratejilerin tasarlanması amacıyla sınırlı olarak
-            hissedarlarımıza,</li>
-          <li>İlgili kamu kurum ve kuruluşlarının hukuki yetkisi dâhilinde talepleri kapsamında sınırlı olarak
-            hukuken yetkili kamu kurum ve kuruluşlarına,</li>
-          <li>KVKK'nda belirtilmiş yasal yükümlülüklerin yerine getirilmesini sağlamak üzere belirlenmiş
-            kurum ve kuruluşlarına,</li>
-        </ul>
-        <p>açık rızanız ya da kanun ile belirlenmiş koşullar çerçevesinde aktarılabilecektir.</p>
+          <p><strong>İşlenen kişisel verilerin kimlere ve hangi amaçla aktarılabileceği,</strong><br>
+            İşlenen kişisel verileriniz yukarıdaki amaçlar ve KVKK'nın belirlediği koşullar içerisinde;</p>
+          <ul>
+            <li>Ticari faaliyetlerin yerine getirilebilmesi ve sürekliliğinin sağlanabilmesi amacıyla, şirketimiz iş
+              ortaklıklarına ya da iştiraklerimize,</li>
+            <li>Dış kaynaklı ürün ve hizmetlerin sağlanabilmesi amacıyla sınırlı olarak tedarikçilerimize,</li>
+            <li>İlgili mevzuat hükümlerine göre ticari faaliyetlerimizin denetimi amacıyla ilgili sözleşmeler
+              kapsamında denetim firmalarına,</li>
+            <li>Şirketimizin ticari faaliyetlerine ilişkin stratejilerin tasarlanması amacıyla sınırlı olarak
+              hissedarlarımıza,</li>
+            <li>İlgili kamu kurum ve kuruluşlarının hukuki yetkisi dâhilinde talepleri kapsamında sınırlı olarak
+              hukuken yetkili kamu kurum ve kuruluşlarına,</li>
+            <li>KVKK'nda belirtilmiş yasal yükümlülüklerin yerine getirilmesini sağlamak üzere belirlenmiş
+              kurum ve kuruluşlarına,</li>
+          </ul>
+          <p>açık rızanız ya da kanun ile belirlenmiş koşullar çerçevesinde aktarılabilecektir.</p>
 
-        <p><strong>Kişisel veri toplamanın yöntemi ve hukuki sebebi,</strong><br>
-          Kişisel verileriniz, şirketimiz veya şirketimiz adına veri işleyen gerçek ya da tüzel kişiler tarafından;
-          internet sitesi, muhtelif sözleşmeler, her türlü ilgi bilgi formları, anketler, iş başvuru formları, iş
-          sözleşmeleri, sosyal medya uygulamaları, çağrı merkezleri ve burada sayılanlarla sınırlı olmamak
-          üzere sözlü, yazılı veya elektronik kanallar aracılığı ile açık rızanız ile toplanmaktadır.</p>
+          <p><strong>Kişisel veri toplamanın yöntemi ve hukuki sebebi,</strong><br>
+            Kişisel verileriniz, şirketimiz veya şirketimiz adına veri işleyen gerçek ya da tüzel kişiler tarafından;
+            internet sitesi, muhtelif sözleşmeler, her türlü ilgi bilgi formları, anketler, iş başvuru formları, iş
+            sözleşmeleri, sosyal medya uygulamaları, çağrı merkezleri ve burada sayılanlarla sınırlı olmamak
+            üzere sözlü, yazılı veya elektronik kanallar aracılığı ile açık rızanız ile toplanmaktadır.</p>
 
-        <p>Bu bilgiler, ticari ve idari faaliyetlerimizin, iş ve sosyal hayatı düzenleyen yasalar çerçevesinde
-          sunulabilmesi ve bu kapsamda şirketimizin ticari hayatını sürdürebilmesi, yasalardan doğan
-          mesuliyetlerini eksiksiz ve doğru bir şekilde yerine getirebilmesi gayesi ile edinilir.</p>
+          <p>Bu bilgiler, ticari ve idari faaliyetlerimizin, iş ve sosyal hayatı düzenleyen yasalar çerçevesinde
+            sunulabilmesi ve bu kapsamda şirketimizin ticari hayatını sürdürebilmesi, yasalardan doğan
+            mesuliyetlerini eksiksiz ve doğru bir şekilde yerine getirebilmesi gayesi ile edinilir.</p>
 
-        <p><strong>Veri Sahibinin Hakları,</strong><br>
-          KVKK kapsamında, kişisel verilerinize ilişkin olarak aşağıdaki haklara sahipsiniz:</p>
-        <ul>
-          <li>Kişisel veri işlenip işlenmediğini öğrenme,</li>
-          <li>Kişisel verileri işlenmişse buna ilişkin bilgi talep etme,</li>
-          <li>Kişisel verilerin işlenme amacını ve bunların amacına uygun kullanılıp kullanılmadığını
-            öğrenme,</li>
-          <li>Yurt içinde veya yurt dışında kişisel verilerin aktarıldığı üçüncü kişileri bilme,</li>
-          <li>Kişisel verilerin eksik veya yanlış işlenmiş olması hâlinde bunların düzeltilmesini isteme,</li>
-          <li>Kişisel verinizin işlenmesini gerektiren sebeplerin ortadan kalkması hâlinde, verilerin
-            silinmesini veya yok edilmesini isteme,</li>
-          <li>Talebinizce düzeltilen ya da silinen bilgilerinizin, eğer aktarılmış ise kişisel verilerin aktarıldığı
-            üçüncü kişilere bildirilmesini isteme,</li>
-          <li>İşlenen verilerin münhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle kişinin
-            kendisi aleyhine bir sonucun ortaya çıkmasına itiraz etme,</li>
-          <li>Kişisel verilerin kanuna aykırı olarak işlenmesi sebebiyle zarara uğraması hâlinde zararın
-            giderilmesini talep etme.</li>
-        </ul>
+          <p><strong>Veri Sahibinin Hakları,</strong><br>
+            KVKK kapsamında, kişisel verilerinize ilişkin olarak aşağıdaki haklara sahipsiniz:</p>
+          <ul>
+            <li>Kişisel veri işlenip işlenmediğini öğrenme,</li>
+            <li>Kişisel verileri işlenmişse buna ilişkin bilgi talep etme,</li>
+            <li>Kişisel verilerin işlenme amacını ve bunların amacına uygun kullanılıp kullanılmadığını
+              öğrenme,</li>
+            <li>Yurt içinde veya yurt dışında kişisel verilerin aktarıldığı üçüncü kişileri bilme,</li>
+            <li>Kişisel verilerin eksik veya yanlış işlenmiş olması hâlinde bunların düzeltilmesini isteme,</li>
+            <li>Kişisel verinizin işlenmesini gerektiren sebeplerin ortadan kalkması hâlinde, verilerin
+              silinmesini veya yok edilmesini isteme,</li>
+            <li>Talebinizce düzeltilen ya da silinen bilgilerinizin, eğer aktarılmış ise kişisel verilerin aktarıldığı
+              üçüncü kişilere bildirilmesini isteme,</li>
+            <li>İşlenen verilerin münhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle kişinin
+              kendisi aleyhine bir sonucun ortaya çıkmasına itiraz etme,</li>
+            <li>Kişisel verilerin kanuna aykırı olarak işlenmesi sebebiyle zarara uğraması hâlinde zararın
+              giderilmesini talep etme.</li>
+          </ul>
 
-        <p>Yukarıda belirtilen haklarınızı kullanmak için kimliğinizi tespit edici gerekli bilgiler ve kullanmak
-          istediğiniz hakkınıza yönelik açıklamalarınızla birlikte yazılı talebinizi "[…]" adresine ıslak imzalı
-          olarak
-          ve/veya […] kayıtlı elektronik posta adresimize güvenli elektronik imza ile imzalanmış olarak
-          gönderebilirsiniz.</p>
+          <p>Yukarıda belirtilen haklarınızı kullanmak için kimliğinizi tespit edici gerekli bilgiler ve kullanmak
+            istediğiniz hakkınıza yönelik açıklamalarınızla birlikte yazılı talebinizi "[…]" adresine ıslak imzalı
+            olarak
+            ve/veya […] kayıtlı elektronik posta adresimize güvenli elektronik imza ile imzalanmış olarak
+            gönderebilirsiniz.</p>
 
-        <p>Kişisel veri sahibi olarak sahip olduğunuz ve yukarıda belirtilen haklarınızı kullanmak için yapacağınız
-          ve kullanmayı talep ettiğiniz hakka ilişkin açıklamalarınızı içeren başvuruda; talep ettiğiniz hususun
-          açık ve anlaşılır olması, talep ettiğiniz konunun şahsınız ile ilgili olması veya başkası adına hareket
-          ediyor iseniz bu konuda özel olarak yetkili olmanız ve yetkinizi belgelendirilmesi, başvurunun kimlik ve
-          adres bilgilerini içermesi ve başvuruya kimliğinizi tevsik edici belgelerin eklenmesi gerekmektedir.</p>
+          <p>Kişisel veri sahibi olarak sahip olduğunuz ve yukarıda belirtilen haklarınızı kullanmak için yapacağınız
+            ve kullanmayı talep ettiğiniz hakka ilişkin açıklamalarınızı içeren başvuruda; talep ettiğiniz hususun
+            açık ve anlaşılır olması, talep ettiğiniz konunun şahsınız ile ilgili olması veya başkası adına hareket
+            ediyor iseniz bu konuda özel olarak yetkili olmanız ve yetkinizi belgelendirilmesi, başvurunun kimlik ve
+            adres bilgilerini içermesi ve başvuruya kimliğinizi tevsik edici belgelerin eklenmesi gerekmektedir.</p>
 
-        <p>Bu kapsamda yapacağınız başvurular mümkün olan en kısa zaman diliminde ve en çok 30 gün
-          içerisinde sonuçlandırılacaktır.</p> <br>
+          <p>Bu kapsamda yapacağınız başvurular mümkün olan en kısa zaman diliminde ve en çok 30 gün
+            içerisinde sonuçlandırılacaktır.</p> <br>
+        </div>
       </div>
     </div>
   </div>
-</div>
-  
-</script>
-<script src="main.js"></script>
-<script src="fuarsinglepage.js"></script>
-<script src="kvkk.js"></script>
+
+  </script>
+  <script src="main.js"></script>
+  <script src="fuarsinglepage.js"></script>
+  <script src="kvkk.js"></script>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"
-  integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+"
-  crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"
+    integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
