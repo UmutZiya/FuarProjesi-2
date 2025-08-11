@@ -2,30 +2,33 @@
 const initialCards = [
   {
     id: 1,
-    image: "./images/card-2-slider-1.png",
-    date: "28",
-    category: "Agenda",
+    image:
+      "./images/textileshow-blog.png",
+    date: "6 June",
+    category: "News",
     title: "The heart of the textile industry beat at the Bursa Textile Show Fair.",
     text: "...",
-     link: "blog-single-page-en.html",
+    link: "blog-single-page-en.html",
   },
   {
     id: 2,
-    image: "./images/card-2-slider-2.png",
-    date: "06",
-    category: "Announcements",
-    title: "Load Safety: Dangers of Overloading on Structures",
+    image:
+      "./images/111.jpg",
+    date: "11 August",
+    category: "News",
+    title: "Rising City Building and Living Fair Opens Its Doors",
     text: "...",
-     link: "blog-single-page-en.html",
+    link: "rising-city-blog-page-en.html",
   },
   {
     id: 3,
-    image: "./images/card-2-slider-3.jpg",
-    date: "28",
-    category: "Agenda",
-    title: "Common Mistakes and Precautions in Load Analysis",
+    image:
+      "./images/222.jpg",
+    date: "12 August",
+    category: "News",
+    title: "Rising City & Building and Living Fair Ends",
     text: "...",
-     link: "blog-single-page-en.html",
+    link: "rising-city-blog-en-2.html",
   },
   {
     id: 4,

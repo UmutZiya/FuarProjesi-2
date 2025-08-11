@@ -280,12 +280,7 @@
                             <tr>
                                 <td>BFM Fuar Salonları Genel Planı</td>
                                 <td><button class="download-btn" onclick="downloadDocument(this)">İndir</button></td>
-                            </tr>
-
-                            <tr>
-                                <td>BFM Teknik Bilgiler</td>
-                                <td><button class="download-btn" onclick="downloadDocument(this)">İndir</button></td>
-                            </tr>
+                            </tr>                           
                         </tbody>
                     </table>
                 </div>
@@ -808,13 +803,8 @@
         function downloadDocument(button) {
             const documentMappings = {
                 'BFM Fuar Salonları Genel Planı': {
-                    url: 'documents/logo-turkuaz.pdf',
-                    filename: 'logo-turkuaz.pdf'
-                },
-
-                'BFM Teknik Bilgiler': {
-                    url: 'documents/logo-turkuaz.pdf',
-                    filename: 'logo-turkuaz.pdf'
+                     url: './assets/documents/bfmyerlesim.pdf',
+                    filename: 'bfmyerlesim.pdf'
                 },
                 // Diğer belgeler
             };

@@ -3,8 +3,8 @@ const initialCards = [
   {
     id: 1,
     image:
-      "./images/card-2-slider-1.png",
-    date: "06",
+      "./images/textileshow-blog.png",
+    date: "6 Haziran",
     category: "Duyurular",
     title: "Tekstil sektörünün kalbi Bursa Textile Show Fuarı’nda attı.",
     text: "...",
@@ -13,22 +13,22 @@ const initialCards = [
   {
     id: 2,
     image:
-      "./images/card-2-slider-2.png",
-    date: "06",
-    category: "Duyurular",
-    title: "Tekstil sektörünün kalbi Bursa Textile Show Fuarı’nda attı.",
+      "./images/111.jpg",
+    date: "11 Ağustos",
+    category: "Gündem",
+    title: "Rising City Yapı ve Yaşam Fuarı Kapılarını Açtı",
     text: "...",
-    link: "blog-single-page.html",
+    link: "rising-city-blog-page.html",
   },
   {
     id: 3,
     image:
-      "./images/card-2-slider-3.jpg",
-    date: "28",
+      "./images/222.jpg",
+    date: "12 Ağustos",
     category: "Gündem",
-    title: "Tekstil sektörünün kalbi Bursa Textile Show Fuarı’nda attı.",
+    title: "Rising City & Yapı ve Yaşam Fuarı Sona Erdi",
     text: "...",
-    link: "blog-single-page.html",
+    link: "rising-city-blog-2.html",
   },
   {
     id: 4,

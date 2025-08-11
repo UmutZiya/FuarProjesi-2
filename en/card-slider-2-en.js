@@ -1,9 +1,9 @@
 /*============= Card-slider 2 JS ================= */
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const cardsData = {
     gundem: [
-      { image: "./images/card-2-slider-1.png", date: "2024-05-01", tag: "Agenda", title: "Countdown Has Started for the 17th SolarEX Istanbul, Which Will Bring Together Solar Industry Brands with World Leaders!", link: "blog-single-page.html" },
-      { image: "./images/card-2-slider-2.png", date: "2024-05-02", tag: "Agenda", title: "Countdown Has Started for the 17th SolarEX Istanbul, Which Will Bring Together Solar Industry Brands with World Leaders!", link: "blog-single-page.html" },
+      { image: "./images/111.jpg", date: "2024-05-01", tag: "Agenda", title: "Rising City Building and Living Fair Opens Its Doors", link: "rising-city-blog-page-en.html"},
+      { image: "./images/hometexblog.png", date: "2024-05-02", tag: "Agenda", title: "The heart of the textile industry beat at the Bursa Textile Show Fair.", link: "blog-single-page.html" },
       { image: "./images/card-2-slider-6.png", date: "2024-05-02", tag: "Agenda", title: "Countdown Has Started for the 17th SolarEX Istanbul, Which Will Bring Together Solar Industry Brands with World Leaders!", link: "blog-single-page.html" },
       { image: "./images/card-2-slider-4.png", date: "2024-05-02", tag: "Agenda", title: "Countdown Has Started for the 17th SolarEX Istanbul, Which Will Bring Together Solar Industry Brands with World Leaders!", link: "blog-single-page.html" },
       { image: "./images/card-2-slider-5.png", date: "2024-05-02", tag: "Agenda", title: "Countdown Has Started for the 17th SolarEX Istanbul, Which Will Bring Together Solar Industry Brands with World Leaders!", link: "blog-single-page.html" },
@@ -42,14 +42,14 @@ document.addEventListener('DOMContentLoaded', function() {
     cardsData[category].forEach(data => {
       const clone = cardTemplate.content.cloneNode(true);
       const formattedDate = formatDate(data.date);
-      
+
       clone.querySelector('img').src = data.image;
       clone.querySelector('.date-year-2').textContent = formattedDate.year;
       clone.querySelector('.date-day-2').textContent = formattedDate.day;
       clone.querySelector('.card-tag-2').textContent = data.tag;
       clone.querySelector('.card-title-2').textContent = data.title;
       clone.querySelector('.card-discover-link-2').href = data.link;
-      
+
       fragment.appendChild(clone);
     });
     return fragment;
@@ -88,28 +88,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function handleCategoryClick(e) {
     const category = e.target.dataset.category;
-    
+
     categoryTabs.forEach(tab => tab.classList.remove('active'));
     e.target.classList.add('active');
-    
+
     // Kartları gizle
     cardSlider.style.display = 'none';
-    
+
     // Yeni kartları oluştur
     const newCards = createCards(category);
-    
+
     // Eski kartları temizle ve yenilerini ekle
     swiperWrapper.innerHTML = '';
     swiperWrapper.appendChild(newCards);
-    
+
     // Apply translations to the newly added cards
     if (typeof i18n_applyTranslations === 'function') {
-        i18n_applyTranslations(i18n_currentLang); // Re-apply translations to the whole page
+      i18n_applyTranslations(i18n_currentLang); // Re-apply translations to the whole page
     } else {
-        console.error("Translation function (i18n_applyTranslations) not accessible.");
-        // As a fallback, you might manually translate items within swiperWrapper if needed
+      console.error("Translation function (i18n_applyTranslations) not accessible.");
+      // As a fallback, you might manually translate items within swiperWrapper if needed
     }
-    
+
     // Swiper'ı güncelle
     if (swiperInstance) {
       swiperInstance.update();
@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
       initSwiper(); // Initialize if it wasn't (should be initialized on load)
     }
-    
+
     // Kartları göster
     requestAnimationFrame(() => {
       cardSlider.style.display = 'block';

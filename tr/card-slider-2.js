@@ -2,9 +2,9 @@
 document.addEventListener('DOMContentLoaded', function() {
   const cardsData = {
     gundem: [
-      { image: "./images/card-2-slider-1.png", date: "2024-05-01", tag: "Gündem", title: "Güneş Sektörünün Markalarını Dünya Liderleriyle Buluşturacak 17. SolarEX İstanbul İçin Geri Sayım Başladı!", link: "blog-single-page.html" },
-      { image: "./images/card-2-slider-2.png", date: "2024-05-02", tag: "Gündem", title: "Güneş Sektörünün Markalarını Dünya Liderleriyle Buluşturacak 17. SolarEX İstanbul İçin Geri Sayım Başladı!", link: "blog-single-page.html" },
-      { image: "./images/card-2-slider-6.png", date: "2024-05-02", tag: "Gündem", title: "Güneş Sektörünün Markalarını Dünya Liderleriyle Buluşturacak 17. SolarEX İstanbul İçin Geri Sayım Başladı!", link: "blog-single-page.html" },
+      { image: "./images/111.jpg", date: "2024-05-01", tag: "Gündem", title: "Rising City Yapı ve Yaşam Fuarı Kapılarını Açtı", link: "rising-city-blog-page.html" },
+      { image: "./images/hometexblog.png", date: "2024-05-02", tag: "Gündem", title: "Tekstil sektörünün kalbi Bursa Textile Show Fuarı’nda attı.", link: "blog-single-page.html" },
+      { image: "./images/222.jpg", date: "2024-05-02", tag: "Gündem", title: "Rising City & Yapı ve Yaşam Fuarı Sona Erdi", link: "rising-city-blog-2.html" },
       { image: "./images/card-2-slider-4.png", date: "2024-05-02", tag: "Gündem", title: "Güneş Sektörünün Markalarını Dünya Liderleriyle Buluşturacak 17. SolarEX İstanbul İçin Geri Sayım Başladı!", link: "blog-single-page.html" },
       { image: "./images/card-2-slider-5.png", date: "2024-05-02", tag: "Gündem", title: "Güneş Sektörünün Markalarını Dünya Liderleriyle Buluşturacak 17. SolarEX İstanbul İçin Geri Sayım Başladı!", link: "blog-single-page.html" },
       { image: "./images/card-2-slider-6.png", date: "2024-05-02", tag: "Gündem", title: "Güneş Sektörünün Markalarını Dünya Liderleriyle Buluşturacak 17. SolarEX İstanbul İçin Geri Sayım Başladı!", link: "blog-single-page.html" },
