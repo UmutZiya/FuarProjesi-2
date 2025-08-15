@@ -7,9 +7,10 @@
     <title>Bursa Fuar Merkezi</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
     <!-- Css -->
     <link rel="stylesheet" href="./assets/style.css">
-    <link rel="stylesheet" href="./assets/hakkimizda.css">
+    <link rel="stylesheet" href="./assets/fuar-single-page.css">
     <link rel="stylesheet" href="./assets/arama-cubugu.css">
     <link rel="stylesheet" href="./assets/header.css">
     <link rel="stylesheet" href="./assets/kvkk.css">
@@ -18,8 +19,8 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> <link rel="icon" type="image" href="./images/bfm-opak-logo.png">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="icon" type="image" href="./images/bfm-opak-logo.png">
 
 </head>
 
@@ -87,7 +88,7 @@
                         </button>
                         <div class="lang-dropdown-content">
                             <a href="index.html" class="active">TR</a>
-                            <a href="../en/extra-services.html">EN</a>
+                            <a href="../en/food-point-en.html">EN</a>
                         </div>
                     </div>
                 </div>
@@ -127,7 +128,7 @@
             <div class="menu-header-actions-fs">
                 <div class="lang-switch">
                     <a href="#" class="active" data-lang="tr" data-translate="lang.tr">TR</a>
-                    <a href="../en/extra-services.html" data-lang="en" data-translate="lang.en">EN</a>
+                    <a href="../en/food-point-en.html" data-lang="en" data-translate="lang.en">EN</a>
                 </div>
                 <button class="close-menu-btn" aria-label="Menüyü Kapat">
                     <i class="fas fa-times"></i>
@@ -148,11 +149,11 @@
             <div class="menu-column">
                 <h3 class="nav-toggle-button">BFM'de Fuar Organize Edin</h3>
                 <ul class="dropdown-menu">
-                            <li><a href="organizator.html">E-Broşürler</a></li>
-                            <li><a href="diger-hizmetler.html">Ek Ve Diğer Hizmetler</a></li>
-                            <li><a href="planlar.html">Planlar</a></li>
-                            <li><a href="toplanti-salonlari.html">Toplantı Salonları</a></li>
-                        </ul>
+                    <li><a href="organizator.html">E-Broşürler</a></li>
+                    <li><a href="diger-hizmetler.html">Ek Ve Diğer Hizmetler</a></li>
+                    <li><a href="planlar.html">Planlar</a></li>
+                    <li><a href="toplanti-salonlari.html">Toplantı Salonları</a></li>
+                </ul>
             </div>
             <div class="menu-column">
                 <h3 class="nav-toggle-button" data-translate="menu.visitBFM">BFM'yi Ziyaret Edin</h3>
@@ -177,208 +178,220 @@
             </div>
         </div>
 
-       <div class="menu-footer">
-      <!-- <span class="up-menu-f2f"> Powered By F2F Bilişim Reklam ve Danışmanlık Hizmetleri</span> -->
-      <span data-translate="menu.followUs">Bizi Takip Edin</span>
-      <div class="social-icons-menu">
-        <a href="https://www.facebook.com/bursafuarmerkezi" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://x.com/burfuarmerkezi" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-        <a href="https://www.instagram.com/bursafuarmerkezi/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.youtube.com/@BursaFuarMerkezi" target="_blank"><i class="fab fa-youtube"></i></a>
-      </div>
-    </div>
+        <div class="menu-footer">
+            <!-- <span class="up-menu-f2f"> Powered By F2F Bilişim Reklam ve Danışmanlık Hizmetleri</span> -->
+            <span data-translate="menu.followUs">Bizi Takip Edin</span>
+            <div class="social-icons-menu">
+                <a href="https://www.facebook.com/lesexpofair" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/lesexpofair" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/lesexpofair/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@@lesexpofair" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/company/yük-mühendisliği-birliği/" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
     </div>
 
     <div class="banner">
 
     </div>
 
-    <div class="container main-container">
-        <div class="row">
-            <!-- Sidebar -->
-            <div class="col-md-3 sidebar-container">
-                <div class="sidebar">
-                    <div class="sidebar-sticky">
-                        <div class="sidebar-header p-3 mb-3 text-center">
-                            <h3 class="" data-translate="organizator.sidebar.mainTitle">BFM</h3>
-                            <p class="text-muted small mb-0" data-translate="organizator.sidebar.subTitle">Bursa Fuar
-                                Merkezi</p>
-                        </div>
+    <div class="container mt-4">
+        <!-- Fuar Başlık Bölümü -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="organizer-info" data-translate="fuarSinglePage.main.organizerInfo">Bursa Fuar Merkezi </div>
+                <h1 class="fair-title" data-translate="fuarSinglePage.main.fairTitle">Food Point Gıda Ürünleri ve
+                    Teknolojileri Fuarı
+                </h1>
+                <div class="d-flex justify-content-end align-items-center mt-3">
+                    <button class="btn btn-outline-danger rounded-circle me-2 share-btn">
+                        <i class="fas fa-share-alt"></i>
+                    </button>
+                    <button class="btn btn-danger takvim-ekle-btn" data-translate="fuarSinglePage.main.addToCalendar">
+                        <i class="far fa-calendar-plus me-2"></i>
+                        Takvime Ekle
+                    </button>
+                </div>
+            </div>
+        </div>
 
-                        <ul class="nav flex-column">
-                            <!-- Organizatör -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="collapse"
-                                    data-bs-target="#hakkimizdaSubmenu" aria-expanded="true">
-                                    <span class="menu-icon"><i class="fas fa-info-circle"></i></span>
-                                    <span data-translate="organizator.sidebar.organizerTitle">Organizatör</span>
-                                </a>
-                                <div class="collapse show" id="hakkimizdaSubmenu">
-                                    <ul class="nav flex-column submenu">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="organizator.html">
-                                                <i class="fas fa-angle-right me-2"></i>
-                                                <span data-translate="organizator.sidebar.eBrochures">E-Broşürler</span>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="diger-hizmetler.html">
-                                                <i class="fas fa-angle-right me-2"></i>
-                                                <span data-translate="organizator.sidebar.otherServices">Diğer
-                                                    Hizmetler</span>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="planlar.html">
-                                                <i class="fas fa-angle-right me-2"></i>
-                                                <span data-translate="organizator.sidebar.plans">Planlar</span>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="toplanti-salonlari.html">
-                                                <i class="fas fa-angle-right me-2"></i>
-                                                <span data-translate="organizator.sidebar.meetingRooms">Toplantı
-                                                    Salonları</span>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link active" href="ek-hizmetler.html">
-                                                <i class="fas fa-angle-right me-2"></i>
-                                                <span data-translate="organizator.sidebar.extraServices">Ek
-                                                    Hizmetler</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
+        <div class="row">
+            <!-- Sol Kolon - Fuar Açıklaması ve Takvim -->
+            <div class="col-lg-8 mb-4">
+                <div class="fair-description mb-4">
+                    <h2 data-translate="fuarSinglePage.description.title">Gıda Sektörünün Buluşma Noktası: Food Point
+                        Gıda Ürünleri ve Teknolojileri Fuarı
+                    </h2>
+                    <p class="fw-bold"> 23 – 25 Ekim 2025 </p>
+                    <p data-translate="fuarSinglePage.description.p1">Bursa Ticaret ve Sanayi Odası’nın öncülüğünde, KFA
+                        Fuarcılık A.Ş. organizasyonuyla düzenlenen Food Point Gıda Ürünleri ve Teknolojileri Fuarı, gıda
+                        sektörünün üretici, tedarikçi ve teknoloji sağlayıcılarını tek çatı altında buluşturuyor.<br>
+
+                        <strong>Food Point</strong> , bu yıl <strong>Network Fuarcılık</strong> tarafından organize
+                        edilen <strong>Horeca Bursa Fuarı </strong> ile <strong> eş
+                            zamanlı olarak </strong> düzenlenecek. Her iki fuar, <strong>“Bursa Gıda Fuarları”</strong>
+                        çatısı altında,
+                        farklı uzmanlık
+                        alanlarını temsil ederek sektörün tamamına hitap eden güçlü bir sinerji yaratmayı hedefliyor.
+
+                    <h6> <strong>Bursa Fuar Merkezi’nde</strong> gerçekleşecek bu büyük organizasyon, başta aşağıdaki
+                        sektörlerden olmak üzere çok sayıda katılımcıya ev sahipliği yapacak:</h6>
+                    <ul>
+                        <li class="">• Dondurulmuş ve işlenmiş gıdalar</li>
+                        <li class="">• Süt ve süt ürünleri</li>
+                        <li class="">• Et ve et ürünleri</li>
+                        <li class="">• Atıştırmalıklar ve içecek grupları</li>
+                        <li class="">• HORECA çözümleri ve perakende sistemleri</li>
+                    </ul>
+
+                    <p>
+                        Food Point, ziyaretçilerine sektördeki yenilikleri ve son teknolojileri yakından inceleme imkânı
+                        sunarken; katılımcı firmalara yeni iş birlikleri kurma, iç ve dış pazarlarda marka bilinirliğini
+                        artırma ve hedef kitleyle doğrudan iletişim kurma fırsatları sağlar.
+                    </p>
+
+                    <p>
+                        <strong>Bursa Gıda Fuarları</strong>, Türkiye'nin gıda sanayisindeki üretim ve ihracat gücünü
+                        sergileyen,
+                        sektörel iş birliklerini destekleyen ve Bursa’yı gıda sektöründe de bir merkez haline getirmeyi
+                        amaçlayan stratejik bir organizasyondur.
+                    </p>
+
+                </div>
+
+
+
+                <!-- Fuar Takvimi Bölümü -->
+                <div class="fair-calendar mb-4">
+                    <h2 class="calendar-title" data-translate="fuarSinglePage.calendar.title">Fuar Takvimi <span
+                            class="calendar-dates">23 Ekim 2025 - 25 Ekim 2025</span></h2>
+                    <div class="calendar-table-wrapper">
+                        <table class="calendar-table">
+                            <thead>
+                                <tr>
+                                    <th>Pzt</th>
+                                    <th>Sal</th>
+                                    <th>Çar</th>
+                                    <th>Per</th>
+                                    <th>Cum</th>
+                                    <th>Cmt</th>
+                                    <th>Paz</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>8</td>
+                                    <td>9</td>
+                                    <td>10</td>
+                                    <td>11</td>
+                                    <td>12</td>
+                                    <td>13</td>
+                                </tr>
+                                <tr>
+                                    <td>14</td>
+                                    <td>15</td>
+                                    <td>16</td>
+                                    <td>17</td>
+                                    <td>18</td>
+                                    <td>19</td>
+                                    <td>20</td>
+                                </tr>
+                                <tr>
+                                    <td>21</td>
+                                    <td>22</td>
+                                    <td class="selected">23</td>
+                                    <td class="selected">24</td>
+                                    <td class="selected">25</td>
+                                    <td>26</td>
+                                    <td>27</td>
+                                </tr>
+                                <tr>
+                                    <td>28</td>
+                                    <td>29</td>
+                                    <td>30</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="calendar-legend mt-2">
+                        <span class="legend-box selected"></span> Fuar Günü
                     </div>
                 </div>
             </div>
+            <!-- Sağ Kolon - Fuar Künyesi -->
+            <div class="col-lg-4">
+                <div class="fair-info-panel">
+                    <h3 data-translate="fuarSinglePage.infoPanel.title">Fuar Künyesi</h3>
 
-            <!-- Main content -->
-            <main class="col-md-9 content-container">
-                <div class="content-header">
-                    <div class="breadcrumb">
-                        <a href="index.html">Ana Sayfa</a> /
-                        <a href="organizator.html">Organizatör</a> /
-                        <a href="ek-hizmetler.html">Ek Hizmetler</a>
+                    <div class="info-item">
+                        <div class="info-label" data-translate="fuarSinglePage.infoPanel.startDateLabel">Başlangıç
+                            Tarihi:</div>
+                        <div class="info-value">03.12.2026</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label" data-translate="fuarSinglePage.infoPanel.endDateLabel">Bitiş Tarihi:
+                        </div>
+                        <div class="info-value">05.12.2026</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label" data-translate="fuarSinglePage.infoPanel.hallLabel">Fuar Salonu:</div>
+                        <div class="info-value">1</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label" data-translate="fuarSinglePage.infoPanel.subjectLabel">Fuar Konusu:
+                        </div>
+                        <div class="info-value" data-translate="fuarSinglePage.infoPanel.subjectValue">Gıda</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label" data-translate="fuarSinglePage.infoPanel.organizerLabel">Organizatör:
+                        </div>
+                        <div class="info-value" data-translate="fuarSinglePage.infoPanel.organizerValue">Bursa Fuar
+                            Merkezi</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label" data-translate="fuarSinglePage.infoPanel.visitorHoursLabel">Ziyaret
+                            Saatleri:</div>
+                        <div class="info-value">09:30-18:00</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label" data-translate="fuarSinglePage.infoPanel.locationLabel">Fuar Alanı:
+                        </div>
+                        <div class="info-value" data-translate="fuarSinglePage.infoPanel.locationValue">Bursa
+                            Uluslararası Fuar ve
+                            Kongre Merkezi</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label" data-translate="fuarSinglePage.infoPanel.websiteLabel">Web:</div>
+                        <div class="info-value"><a href="https://bursafoodpoint.com.tr"
+                                target="_blank">https://bursafoodpoint.com.tr</a>
+                        </div>
                     </div>
                 </div>
-
-                <div class="content-body ms-5">
-                    <h1 class="page-title-2">Ek hizmetler</h1>
-                    <div class="content-text">
-                        <h3 class="mb-4">Dinamik ve Modern Çözümler: BFM Ofis ve Toplantı Salonları</h3>
-                        <p class="mb-5">Ek hizmetler kapsamında aşağıda belirtilen hizmetlerin BFM tarafından
-                            yetkilendirilmiş olan alt yüklenici firmalar aracılığı ile sağlanması zorunludur:</p>
-                        <ul style="list-style-type: disc;">
-                            <li>
-                                Altyapı ve Kurulum Hizmetleri
-                            </li>
-                            <li>
-                                İş sağlığı ve Güvenliği (Ambulans) Hizmetleri
-                            </li>
-                            <li>
-                                Elleçleme (yükleme/boşaltma) Hizmetleri
-                            </li>
-                            <li>
-                                Güvenlik ve Temizlik Hizmetleri
-                            </li>
-                        </ul>
-                        <p>Organizatörlerin ilgili taleplerini fuar giriş tarihinden en az 2 (iki) hafta öncesinde BFM
-                            Ek Hizmetler birimine iletmesi gerekmektedir. İlgili taleplerin temel başlıkları aşağıda
-                            sıralanmıştır:</p>
-                        <ul style="list-style-type: disc;">
-                            <li>
-                                Fuar alanının onaylı zemin planları (yerleşim planları)
-                            </li>
-                            <li>
-                                Elektrik/mekanik talepleri (kW, hava, su, kablolu internet),
-                            </li>
-                            <li>
-                                Kurulum ve söküm saatlerini belirten çalışma takvimi,
-                            </li>
-                            <li>
-                                Teknik host ve süpervizör talepleri,
-                            </li>
-                            <li>
-                                Ambulans talepleri.
-                            </li>
-                        </ul>
-                        <h3 class="mb-4">Altyapı Kurulum</h3>
-                        <p class="mb-5">BFM yönetiminin yetkilendirmiş olduğu alt yüklenici firma, altyapı-kurulum
-                            hizmetleri ile alakalı tek yetkili firmadır.</p>
-                        <p><strong>Fuar kurulum ve söküm işleri;</strong>
-                            Plan atma, fuar teknik supervizör (kurulum ve söküm günlerinde salon başına 1, fuarın devam
-                            ettiği günlerde ise her 4 salon için 1 adet süpervizör bulundurulmalıdır), fuar teknik host
-                            (kurulum ve söküm günlerinde salon başına 2, fuarın devam ettiği günlerde salon başına 1
-                            adet teknik host bulundurulmalıdır) faaliyetlerini kapsamaktadır</p>
-                        <p><strong>Elektrik işleri;</strong>
-                            Stant panosuna kadar elektrik kablolarının serilmesi, kablolu internet bağlantısı, her bir
-                            elektrik panosu başına yapılan stant elektriksel bağlantı kontrolü, jeneratör hizmetlerini
-                            kapsamaktadır.</p>
-                        <p><strong>Mekanik işleri;</strong>
-                            Kullanım suyu bağlantısı, pis su bağlantısı, 5 bar ’a kadar basınçlı hava bağlantısı, stant
-                            mekanik bağlantı kontrolü hizmetlerini kapsamaktadır.</p>
-                        <p><strong>İnşai işler;</strong>
-                            Stant statik kontrolü (bu hizmet sadece 4 metre ve üzeri ve/veya 2 katlı olan stantlar için
-                            verilecektir) hizmetini kapsamaktadır.</p>
-
-                        <h3 class="mb-4">İş Sağlığı ve Güvenliği (Ambulans) Hizmetleri</h3>
-                        <p>Fuar alanında ambulans bulundurulması hizmetini tanımlamaktadır. Kurulum, organizasyon ve
-                            söküm süreçleri boyunca acil durumlarda müdahale etmek üzere BFM tarafından yetkilendirilen
-                            firmanın en az 1 adet ambulansı hazır bulundurulacak olup, bu sayı salon, ziyaretçi ve
-                            katılımcı sayısı dikkate alınarak artırılabilecektir.</p>
-
-                        <h3 class="mb-4">Lojistik/Elleçleme Hizmetleri</h3>
-                        <p>BFM yönetimi tarafından yetkilendirilmiş alt yüklenici firma, lojistik ve elleçleme
-                            hizmetleri kapsamındaki tek yetkilidir. Alana farklı bir lojistik ve elleçleme hizmeti veren
-                            firma ekipmanının ya da personelinin girişi yasaktır. Organizatör ve/veya katılımcıların
-                            lojistik ile ilgili taleplerini doğrudan yetkili firmaya bildirmeleri gerekmektedir.</p>
-
-                        <p>BFM yönetimi tarafından lojistik ve elleçleme hizmetini sağlama üzerine yetkilendirilen alt
-                            yüklenici firma; fuar alanlarında sergilenecek ürün/stant malzemelerinin indirilmesi ve fuar
-                            sonrası geri yüklenmesi sırasında ihtiyaç duyulan her türlü lojistik ekipmanı, personeli ve
-                            operasyonu sağlamaktadır.</p>
-
-                        <h3 class="mb-4">Güvenlik Hizmeti</h3>
-                        <p>Fuar kapsamındaki genel güvenlik hizmetleri, fuar alanının tahsis süresi boyunca, BFM
-                            yönetimi tarafından yetkilendirilen alt yüklenici firmanın sorumluluğundadır. Fuar
-                            güvenliğinin sorumluluğunu üstlenecek olan personel sayısı, BFM yönetiminin belirlediği
-                            standart kriterler aracılığı ile belirlenir.</p>
-                        <p>
-                            Belirlenen güvenlik personeli sayısı organizatör tarafından yetersiz bulunursa; güvenlik
-                            personeli sayısı artırılma talebi, ödenecek olan ek ücret karşılığında gerçekleştirilir.
-                            Standart güvenlik personeli ve ilave edilen ek personel ücretleri “Ek Hizmetler” kapsamında
-                            organizatöre yansıtılmaktadır.
-                        </p>
-                        <p>
-                            ,Salonların sabit noktalarında güvenlik arama dedektörleri ve x-ray cihazları bulunmaktadır.
-                            Organizatör, fuar girişlerini ve çıkışlarını belirlenen bu sabit bölgelere göre kurgulamak
-                            zorundadır. Organizatörün talebi doğrultusunda oluşturulacak olan ek güvenlik noktaları;
-                            ilave edilen kapı dedektörü ve x-ray günlük cihaz bedeli kalemlerini içeren “Ek Hizmetler"
-                            kapsamında organizatöre yansıtılmaktadır.
-                        </p>
-
-                        <h3 class="mb-4">Temizlik Hizmeti</h3>
-                        <p>Fuar salonları, fuaye, dış ve diğer alanların temizliği hizmeti; fuarın tahsis süresi boyunca
-                            İFM ya da İFM ’nin yetkilendirdiği firma tarafından karşılanmaktadır. Fuarın temizliği
-                            sorumluluğunu üstlenecek olan personel sayısı, İFM yönetiminin belirlediği standart
-                            kriterler aracılığı ile belirlenir.</p>
-
-                    </div>
-            </main>
+            </div>
         </div>
     </div>
-
-
-
-    <!-- Sidebar mobile toggle button -->
-    <button class="sidebar-toggle-button d-md-none">
-        <i class="fas fa-bars"></i>
-    </button>
-
 
     <!-- Footer Start -->
     <footer class="bg-dark text-white pt-5  footer">
@@ -458,29 +471,29 @@
                 <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3 ps-5">
                     <img src="images/logo-beyaz.png" class="logo-footer" alt="">
                     <hr>
-                              <div class="card-footer">
-            <div class="social-footer">
-              <h2 class="footer-title">Bizi Takip Edin !</h2>
-              <div class="social-container">
-                <a href="https://www.instagram.com/bursafuarmerkezi/" class="social-link instagram" target="_blank"
-                  rel="noopener noreferrer" aria-label="Instagram">
-                  <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.facebook.com/bursafuarmerkezi" class="social-link facebook" target="_blank"
-                  rel="noopener noreferrer" aria-label="Facebook">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://x.com/burfuarmerkezi" class="social-link twitter" target="_blank"
-                  rel="noopener noreferrer" aria-label="X (Twitter)">
-                  <span class="x-logo">𝕏</span>
-                </a>
-                <a href="https://www.youtube.com/@BursaFuarMerkezi" class="social-link youtube" target="_blank"
-                  rel="noopener noreferrer" aria-label="YouTube">
-                  <i class="fab fa-youtube"></i>
-                </a>
-              </div>
-            </div>
-          </div>
+                    <div class="card-footer">
+                        <div class="social-footer">
+                            <h2 class="footer-title">Bizi Takip Edin !</h2>
+                            <div class="social-container">
+                                <a href="https://www.instagram.com/bursafuarmerkezi/" class="social-link instagram"
+                                    target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://www.facebook.com/bursafuarmerkezi" class="social-link facebook"
+                                    target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://x.com/burfuarmerkezi" class="social-link twitter" target="_blank"
+                                    rel="noopener noreferrer" aria-label="X (Twitter)">
+                                    <span class="x-logo">𝕏</span>
+                                </a>
+                                <a href="https://www.youtube.com/@BursaFuarMerkezi" class="social-link youtube"
+                                    target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -868,36 +881,16 @@
         </div>
     </div>
 
-    <script>
-        const buttons = document.querySelectorAll('#pagination .page-button');
-
-        buttons.forEach(button => {
-            button.addEventListener('click', () => {
-                buttons.forEach(btn => {
-                    btn.classList.remove('btn-danger');
-                    btn.classList.add('btn-outline-danger');
-                });
-
-                button.classList.remove('btn-outline-danger');
-                button.classList.add('btn-danger');
-            });
-        });
-
     </script>
+    <script src="main.js"></script>
+    <script src="fuarsinglepage.js"></script>
+    <script src="kvkk.js"></script>
 
-    <!-- Bootstrap Bundle JS (includes Popper) - Load BEFORE custom scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"
+        integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
-
-    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- Custom Scripts -->
-    <script src="hakkimizda.js"></script>
-    <script src="main.js"></script>
-    <script src="kvkk.js"></script>
-
 </body>
-
-</html>
