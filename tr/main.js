@@ -172,12 +172,45 @@ document.addEventListener('DOMContentLoaded', function() {
   let currentTranslate = 0;
   let prevTranslate = 0;
   let animationID = 0;
+  // Autoplay variables
+  let autoplayIntervalId = null;
+  const AUTOPLAY_DELAY_MS = 1500;
+
+  function stopAutoplay() {
+      if (autoplayIntervalId) {
+          clearInterval(autoplayIntervalId);
+          autoplayIntervalId = null;
+      }
+  }
+
+  function startAutoplay() {
+      stopAutoplay();
+      autoplayIntervalId = setInterval(() => {
+          if (isDragging) return;
+          if (currentIndex < maxIndex) {
+              currentIndex++;
+              updateSlider();
+          } else {
+              // Jump back to start without animation, then continue
+              slider.style.transition = 'none';
+              currentIndex = 0;
+              currentTranslate = 0;
+              slider.style.transform = `translateX(${currentTranslate}px)`;
+              updateProgressBar();
+              // Force reflow, then restore transition for next moves
+              void slider.offsetHeight;
+              slider.style.transition = 'transform 0.5s ease';
+          }
+      }, AUTOPLAY_DELAY_MS);
+  }
 
   // Slider için mousedown event listener ekleyin
   slider.addEventListener('mousedown', dragStart);
   slider.addEventListener('mouseup', dragEnd);
   slider.addEventListener('mouseleave', dragEnd);
   slider.addEventListener('mousemove', drag);
+  slider.addEventListener('mouseenter', stopAutoplay);
+  slider.addEventListener('mouseleave', startAutoplay);
 
   // Dokunmatik event listener'ları güncelleyin
   slider.addEventListener('touchstart', function(e) {
@@ -199,6 +232,7 @@ document.addEventListener('DOMContentLoaded', function() {
       // Animasyonu durdur ve transition'ı kapat
       slider.style.transition = 'none';
       cancelAnimationFrame(animationID);
+      stopAutoplay();
   }
 
   function drag(e) {
@@ -231,6 +265,7 @@ document.addEventListener('DOMContentLoaded', function() {
       
       // Slider'ı son pozisyona animasyonla getir
       updateSlider();
+      startAutoplay();
   }
 
   // Mevcut updateSlider fonksiyonunu güncelleyin
@@ -239,6 +274,9 @@ document.addEventListener('DOMContentLoaded', function() {
       slider.style.transform = `translateX(${currentTranslate}px)`;
       updateProgressBar();
   }
+
+  // Start autoplay after initial setup
+  startAutoplay();
 
   // ... mevcut diğer fonksiyonlar ...
   
